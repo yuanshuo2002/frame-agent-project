@@ -1,0 +1,91 @@
+{
+  "summary_table": [
+    {
+      "method": "No-RAG",
+      "avg_overall": 4.593,
+      "by_section": {
+        "background": 4.607,
+        "related_work": 4.305,
+        "methodology": 4.725,
+        "result": 4.487,
+        "conclusion": 4.69,
+        "topic": 4.718
+      }
+    },
+    {
+      "method": "RAG (Baseline)",
+      "avg_overall": 4.524,
+      "by_section": {
+        "background": 4.5,
+        "related_work": 4.33,
+        "methodology": 4.718,
+        "result": 4.5,
+        "conclusion": 4.543,
+        "topic": 4.68
+      }
+    },
+    {
+      "method": "Ours (FRAME + Filter)",
+      "avg_overall": 4.58,
+      "by_section": {
+        "topic": 4.707,
+        "methodology": 4.668,
+        "result": 4.562,
+        "conclusion": 4.61,
+        "background": 4.61,
+        "related_work": 4.325
+      }
+    }
+  ],
+  "detailed": {
+    "no_rag": {
+      "method": "no_rag",
+      "label": "No-RAG",
+      "n_papers": 5,
+      "section_scores": {
+        "background": 4.607,
+        "related_work": 4.305,
+        "methodology": 4.725,
+        "result": 4.487,
+        "conclusion": 4.69,
+        "topic": 4.718
+      },
+      "overall_avg_score": 4.593,
+      "statistical_metrics": {}
+    },
+    "rag": {
+      "method": "rag",
+      "label": "RAG (Baseline)",
+      "n_papers": 5,
+      "section_scores": {
+        "background": 4.5,
+        "related_work": 4.33,
+        "methodology": 4.718,
+        "result": 4.5,
+        "conclusion": 4.543,
+        "topic": 4.68
+      },
+      "overall_avg_score": 4.524,
+      "statistical_metrics": {}
+    },
+    "ours": {
+      "method": "ours",
+      "label": "Ours (FRAME + Filter)",
+      "n_papers": 5,
+      "section_scores": {
+        "topic": 4.707,
+        "methodology": 4.668,
+        "result": 4.562,
+        "conclusion": 4.61,
+        "background": 4.61,
+        "related_work": 4.325
+      },
+      "overall_avg_score": 4.58,
+      "statistical_metrics": {}
+    }
+  },
+  "improvement_analysis": {
+    "gain_vs_no_rag": -0.28,
+    "gain_vs_rag": 1.24
+  }
+}

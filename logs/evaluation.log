@@ -1,0 +1,1040 @@
+2026-04-10 20:07:01.293 | INFO     | __main__:main:54 - 🚀 FRAME Phase 5: 评估阶段 开始
+2026-04-10 20:07:07.411 | INFO     | __main__:_run_full_pipeline:88 - 
+🔄 === 完整流水线模式 ===
+
+2026-04-10 20:07:07.411 | INFO     | __main__:_run_full_pipeline:94 - Step 1/4: 构建演示数据集...
+2026-04-10 20:09:37.577 | INFO     | __main__:main:54 - 🚀 FRAME Phase 5: 评估阶段 开始
+2026-04-10 20:09:43.827 | INFO     | __main__:_run_full_pipeline:88 - 
+🔄 === 完整流水线模式 ===
+
+2026-04-10 20:09:43.827 | INFO     | __main__:_run_full_pipeline:94 - Step 1/4: 构建演示数据集...
+2026-04-10 20:20:59.121 | INFO     | __main__:_run_full_pipeline:105 - Step 2/4: 快速训练...
+2026-04-10 20:42:19.778 | INFO     | __main__:_run_full_pipeline:113 - Step 3/4: 对比实验推理...
+2026-04-10 20:42:19.798 | INFO     | src.utils.embedding:__init__:38 - 未检测到 CUDA GPU，使用 CPU 模式 (Embedding 会较慢但可用)
+2026-04-10 20:42:19.834 | INFO     | src.utils.embedding:_init_openai:84 - 使用 API Embedding | 模型=text-embedding-v1 | 维度=1536
+2026-04-10 20:42:19.835 | INFO     | src.inference.retriever:__init__:60 - FAISS 索引初始化 | 类型=IndexFlatIP | 维度=1536
+2026-04-10 20:42:19.836 | WARNING  | src.inference.retriever:load:209 - 索引文件不存在: data/faiss_index/frame_index.index
+2026-04-10 20:42:19.883 | INFO     | src.utils.llm_client:__init__:52 - 初始化 LLM 客户端: dashscope/deepseek-v3
+2026-04-10 20:42:19.925 | INFO     | src.utils.llm_client:__init__:52 - 初始化 LLM 客户端: dashscope/deepseek-v3
+2026-04-10 20:42:19.964 | INFO     | src.utils.llm_client:__init__:52 - 初始化 LLM 客户端: dashscope/deepseek-v3
+2026-04-10 20:42:19.965 | INFO     | src.inference.pipeline:__init__:54 - FrameInferencePipeline 初始化完成 | TopK=5 | Filter=✓ | Integrator=✓
+2026-04-10 20:42:19.966 | INFO     | src.inference.pipeline:run_comparison_experiment:226 - 
+##################################################
+2026-04-10 20:42:19.967 | INFO     | src.inference.pipeline:run_comparison_experiment:227 - 对比实验进度: 1/3 | Deep Learning for CT-based Medical Image Analysis and Diagno...
+2026-04-10 20:42:19.967 | INFO     | src.inference.pipeline:run_comparison_experiment:228 - ##################################################
+2026-04-10 20:42:19.967 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:42:19.968 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: Deep Learning for CT-based Medical Image Analysis and Diagno
+2026-04-10 20:42:19.968 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-10 20:42:19.969 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [topic] 章节...
+2026-04-10 20:42:42.704 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [topic] 生成完成 (2592 字符)
+2026-04-10 20:42:42.704 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [topic] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=2592
+2026-04-10 20:42:43.707 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:42:43.707 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: Deep Learning for CT-based Medical Image Analysis and Diagno
+2026-04-10 20:42:43.708 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-10 20:42:43.709 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [background] 章节...
+2026-04-10 20:42:57.900 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [background] 生成完成 (2521 字符)
+2026-04-10 20:42:57.901 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [background] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=2521
+2026-04-10 20:42:58.903 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:42:58.903 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: Deep Learning for CT-based Medical Image Analysis and Diagno
+2026-04-10 20:42:58.904 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-10 20:42:58.904 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [related_work] 章节...
+2026-04-10 20:43:21.437 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [related_work] 生成完成 (4491 字符)
+2026-04-10 20:43:21.438 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [related_work] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=4491
+2026-04-10 20:43:22.439 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:43:22.439 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: Deep Learning for CT-based Medical Image Analysis and Diagno
+2026-04-10 20:43:22.441 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-10 20:43:22.441 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [methodology] 章节...
+2026-04-10 20:43:49.771 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [methodology] 生成完成 (4036 字符)
+2026-04-10 20:43:49.771 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [methodology] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=4036
+2026-04-10 20:43:50.772 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:43:50.772 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: Deep Learning for CT-based Medical Image Analysis and Diagno
+2026-04-10 20:43:50.774 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-10 20:43:50.775 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [result] 章节...
+2026-04-10 20:44:13.139 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [result] 生成完成 (3144 字符)
+2026-04-10 20:44:13.140 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [result] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=3144
+2026-04-10 20:44:14.142 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:44:14.142 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: Deep Learning for CT-based Medical Image Analysis and Diagno
+2026-04-10 20:44:14.144 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-10 20:44:14.144 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [conclusion] 章节...
+2026-04-10 20:44:28.565 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [conclusion] 生成完成 (2220 字符)
+2026-04-10 20:44:28.567 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [conclusion] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=2220
+2026-04-10 20:44:29.569 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [no_rag] 完成
+2026-04-10 20:44:31.569 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:44:31.569 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: Deep Learning for CT-based Medical Image Analysis and Diagno
+2026-04-10 20:44:31.570 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-10 20:44:31.571 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [topic] 章节...
+2026-04-10 20:44:44.885 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [topic] 生成完成 (2607 字符)
+2026-04-10 20:44:44.885 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [topic] 生成完成 | 方法=rag | 检索=0 → 过滤=0 | 输出长度=2607
+2026-04-10 20:44:45.889 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:44:45.889 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: Deep Learning for CT-based Medical Image Analysis and Diagno
+2026-04-10 20:44:45.891 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-10 20:44:45.891 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [background] 章节...
+2026-04-10 20:45:43.457 | WARNING  | src.utils.llm_client:chat:114 - API 调用失败 (尝试 1/3): Connection error.
+2026-04-10 20:46:05.833 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [background] 生成完成 (1984 字符)
+2026-04-10 20:46:05.834 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [background] 生成完成 | 方法=rag | 检索=0 → 过滤=0 | 输出长度=1984
+2026-04-10 20:46:06.836 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:46:06.836 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: Deep Learning for CT-based Medical Image Analysis and Diagno
+2026-04-10 20:46:06.838 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-10 20:46:06.839 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [related_work] 章节...
+2026-04-10 20:46:27.443 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [related_work] 生成完成 (3427 字符)
+2026-04-10 20:46:27.444 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [related_work] 生成完成 | 方法=rag | 检索=0 → 过滤=0 | 输出长度=3427
+2026-04-10 20:46:28.446 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:46:28.446 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: Deep Learning for CT-based Medical Image Analysis and Diagno
+2026-04-10 20:46:28.447 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-10 20:46:28.448 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [methodology] 章节...
+2026-04-10 20:46:51.613 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [methodology] 生成完成 (3658 字符)
+2026-04-10 20:46:51.614 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [methodology] 生成完成 | 方法=rag | 检索=0 → 过滤=0 | 输出长度=3658
+2026-04-10 20:46:52.615 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:46:52.615 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: Deep Learning for CT-based Medical Image Analysis and Diagno
+2026-04-10 20:46:52.616 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-10 20:46:52.617 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [result] 章节...
+2026-04-10 20:47:07.120 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [result] 生成完成 (2003 字符)
+2026-04-10 20:47:07.121 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [result] 生成完成 | 方法=rag | 检索=0 → 过滤=0 | 输出长度=2003
+2026-04-10 20:47:08.123 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:47:08.123 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: Deep Learning for CT-based Medical Image Analysis and Diagno
+2026-04-10 20:47:08.124 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-10 20:47:08.125 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [conclusion] 章节...
+2026-04-10 20:47:24.587 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [conclusion] 生成完成 (2395 字符)
+2026-04-10 20:47:24.588 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [conclusion] 生成完成 | 方法=rag | 检索=0 → 过滤=0 | 输出长度=2395
+2026-04-10 20:47:25.589 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [rag] 完成
+2026-04-10 20:47:27.589 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:47:27.589 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: Deep Learning for CT-based Medical Image Analysis and Diagno
+2026-04-10 20:47:27.590 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-10 20:47:27.591 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [topic] 章节...
+2026-04-10 20:47:59.210 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [topic] 生成完成 (2125 字符)
+2026-04-10 20:47:59.211 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [topic] 生成完成 | 方法=ours | 检索=0 → 过滤=0 | 输出长度=2125
+2026-04-10 20:48:00.214 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:48:00.214 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: Deep Learning for CT-based Medical Image Analysis and Diagno
+2026-04-10 20:48:00.215 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-10 20:48:00.216 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [background] 章节...
+2026-04-10 20:48:17.584 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [background] 生成完成 (2705 字符)
+2026-04-10 20:48:17.584 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [background] 生成完成 | 方法=ours | 检索=0 → 过滤=0 | 输出长度=2705
+2026-04-10 20:48:18.587 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:48:18.587 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: Deep Learning for CT-based Medical Image Analysis and Diagno
+2026-04-10 20:48:18.588 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-10 20:48:18.589 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [related_work] 章节...
+2026-04-10 20:48:41.836 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [related_work] 生成完成 (3423 字符)
+2026-04-10 20:48:41.837 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [related_work] 生成完成 | 方法=ours | 检索=0 → 过滤=0 | 输出长度=3423
+2026-04-10 20:48:42.838 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:48:42.838 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: Deep Learning for CT-based Medical Image Analysis and Diagno
+2026-04-10 20:48:42.839 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-10 20:48:42.839 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [methodology] 章节...
+2026-04-10 20:49:31.037 | WARNING  | src.utils.llm_client:chat:114 - API 调用失败 (尝试 1/3): Connection error.
+2026-04-10 20:50:11.108 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [methodology] 生成完成 (4016 字符)
+2026-04-10 20:50:11.109 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [methodology] 生成完成 | 方法=ours | 检索=0 → 过滤=0 | 输出长度=4016
+2026-04-10 20:50:12.112 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:50:12.112 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: Deep Learning for CT-based Medical Image Analysis and Diagno
+2026-04-10 20:50:12.113 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-10 20:50:12.113 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [result] 章节...
+2026-04-10 20:50:32.235 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [result] 生成完成 (2876 字符)
+2026-04-10 20:50:32.236 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [result] 生成完成 | 方法=ours | 检索=0 → 过滤=0 | 输出长度=2876
+2026-04-10 20:50:33.238 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:50:33.238 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: Deep Learning for CT-based Medical Image Analysis and Diagno
+2026-04-10 20:50:33.240 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-10 20:50:33.240 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [conclusion] 章节...
+2026-04-10 20:50:52.352 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [conclusion] 生成完成 (2087 字符)
+2026-04-10 20:50:52.354 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [conclusion] 生成完成 | 方法=ours | 检索=0 → 过滤=0 | 输出长度=2087
+2026-04-10 20:50:53.355 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [ours] 完成
+2026-04-10 20:50:55.355 | INFO     | src.inference.pipeline:run_comparison_experiment:226 - 
+##################################################
+2026-04-10 20:50:55.355 | INFO     | src.inference.pipeline:run_comparison_experiment:227 - 对比实验进度: 2/3 | NLP Methods for Clinical Note Information Extraction and Str...
+2026-04-10 20:50:55.358 | INFO     | src.inference.pipeline:run_comparison_experiment:228 - ##################################################
+2026-04-10 20:50:55.358 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:50:55.359 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: NLP Methods for Clinical Note Information Extraction and Str
+2026-04-10 20:50:55.359 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-10 20:50:55.359 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [topic] 章节...
+2026-04-10 20:51:09.604 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [topic] 生成完成 (2491 字符)
+2026-04-10 20:51:09.605 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [topic] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=2491
+2026-04-10 20:51:10.606 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:51:10.606 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: NLP Methods for Clinical Note Information Extraction and Str
+2026-04-10 20:51:10.607 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-10 20:51:10.608 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [background] 章节...
+2026-04-10 20:51:31.061 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [background] 生成完成 (3465 字符)
+2026-04-10 20:51:31.062 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [background] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=3465
+2026-04-10 20:51:32.064 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:51:32.064 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: NLP Methods for Clinical Note Information Extraction and Str
+2026-04-10 20:51:32.065 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-10 20:51:32.066 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [related_work] 章节...
+2026-04-10 20:52:38.166 | WARNING  | src.utils.llm_client:chat:114 - API 调用失败 (尝试 1/3): Connection error.
+2026-04-10 20:53:02.290 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [related_work] 生成完成 (3399 字符)
+2026-04-10 20:53:02.291 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [related_work] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=3399
+2026-04-10 20:53:03.293 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:53:03.293 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: NLP Methods for Clinical Note Information Extraction and Str
+2026-04-10 20:53:03.294 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-10 20:53:03.294 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [methodology] 章节...
+2026-04-10 20:53:26.103 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [methodology] 生成完成 (3495 字符)
+2026-04-10 20:53:26.104 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [methodology] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=3495
+2026-04-10 20:53:27.105 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:53:27.105 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: NLP Methods for Clinical Note Information Extraction and Str
+2026-04-10 20:53:27.106 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-10 20:53:27.107 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [result] 章节...
+2026-04-10 20:53:46.246 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [result] 生成完成 (2776 字符)
+2026-04-10 20:53:46.246 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [result] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=2776
+2026-04-10 20:53:47.266 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:53:47.266 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: NLP Methods for Clinical Note Information Extraction and Str
+2026-04-10 20:53:47.268 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-10 20:53:47.269 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [conclusion] 章节...
+2026-04-10 20:53:57.841 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [conclusion] 生成完成 (1689 字符)
+2026-04-10 20:53:57.841 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [conclusion] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=1689
+2026-04-10 20:53:58.844 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [no_rag] 完成
+2026-04-10 20:54:00.844 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:54:00.844 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: NLP Methods for Clinical Note Information Extraction and Str
+2026-04-10 20:54:00.845 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-10 20:54:00.845 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [topic] 章节...
+2026-04-10 20:54:15.756 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [topic] 生成完成 (2055 字符)
+2026-04-10 20:54:15.757 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [topic] 生成完成 | 方法=rag | 检索=0 → 过滤=0 | 输出长度=2055
+2026-04-10 20:54:16.758 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:54:16.758 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: NLP Methods for Clinical Note Information Extraction and Str
+2026-04-10 20:54:16.759 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-10 20:54:16.759 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [background] 章节...
+2026-04-10 20:54:35.818 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [background] 生成完成 (3485 字符)
+2026-04-10 20:54:35.819 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [background] 生成完成 | 方法=rag | 检索=0 → 过滤=0 | 输出长度=3485
+2026-04-10 20:54:36.821 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:54:36.821 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: NLP Methods for Clinical Note Information Extraction and Str
+2026-04-10 20:54:36.823 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-10 20:54:36.823 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [related_work] 章节...
+2026-04-10 20:55:03.344 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [related_work] 生成完成 (3849 字符)
+2026-04-10 20:55:03.345 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [related_work] 生成完成 | 方法=rag | 检索=0 → 过滤=0 | 输出长度=3849
+2026-04-10 20:55:04.348 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:55:04.348 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: NLP Methods for Clinical Note Information Extraction and Str
+2026-04-10 20:55:04.349 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-10 20:55:04.349 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [methodology] 章节...
+2026-04-10 20:55:26.127 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [methodology] 生成完成 (3228 字符)
+2026-04-10 20:55:26.127 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [methodology] 生成完成 | 方法=rag | 检索=0 → 过滤=0 | 输出长度=3228
+2026-04-10 20:55:27.130 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:55:27.131 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: NLP Methods for Clinical Note Information Extraction and Str
+2026-04-10 20:55:27.132 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-10 20:55:27.132 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [result] 章节...
+2026-04-10 20:55:44.858 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [result] 生成完成 (2671 字符)
+2026-04-10 20:55:44.859 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [result] 生成完成 | 方法=rag | 检索=0 → 过滤=0 | 输出长度=2671
+2026-04-10 20:55:45.860 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:55:45.860 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: NLP Methods for Clinical Note Information Extraction and Str
+2026-04-10 20:55:45.862 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-10 20:55:45.863 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [conclusion] 章节...
+2026-04-10 20:56:10.116 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [conclusion] 生成完成 (1918 字符)
+2026-04-10 20:56:10.116 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [conclusion] 生成完成 | 方法=rag | 检索=0 → 过滤=0 | 输出长度=1918
+2026-04-10 20:56:11.119 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [rag] 完成
+2026-04-10 20:56:13.120 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:56:13.120 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: NLP Methods for Clinical Note Information Extraction and Str
+2026-04-10 20:56:13.122 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-10 20:56:13.123 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [topic] 章节...
+2026-04-10 20:56:26.179 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [topic] 生成完成 (2472 字符)
+2026-04-10 20:56:26.179 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [topic] 生成完成 | 方法=ours | 检索=0 → 过滤=0 | 输出长度=2472
+2026-04-10 20:56:27.182 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:56:27.182 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: NLP Methods for Clinical Note Information Extraction and Str
+2026-04-10 20:56:27.183 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-10 20:56:27.183 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [background] 章节...
+2026-04-10 20:56:51.054 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [background] 生成完成 (3438 字符)
+2026-04-10 20:56:51.055 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [background] 生成完成 | 方法=ours | 检索=0 → 过滤=0 | 输出长度=3438
+2026-04-10 20:56:52.057 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:56:52.057 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: NLP Methods for Clinical Note Information Extraction and Str
+2026-04-10 20:56:52.058 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-10 20:56:52.059 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [related_work] 章节...
+2026-04-10 20:57:48.254 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [related_work] 生成完成 (3699 字符)
+2026-04-10 20:57:48.255 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [related_work] 生成完成 | 方法=ours | 检索=0 → 过滤=0 | 输出长度=3699
+2026-04-10 20:57:49.256 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:57:49.256 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: NLP Methods for Clinical Note Information Extraction and Str
+2026-04-10 20:57:49.257 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-10 20:57:49.258 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [methodology] 章节...
+2026-04-10 20:58:12.792 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [methodology] 生成完成 (3562 字符)
+2026-04-10 20:58:12.793 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [methodology] 生成完成 | 方法=ours | 检索=0 → 过滤=0 | 输出长度=3562
+2026-04-10 20:58:13.795 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:58:13.795 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: NLP Methods for Clinical Note Information Extraction and Str
+2026-04-10 20:58:13.796 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-10 20:58:13.797 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [result] 章节...
+2026-04-10 20:58:48.386 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [result] 生成完成 (2948 字符)
+2026-04-10 20:58:48.386 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [result] 生成完成 | 方法=ours | 检索=0 → 过滤=0 | 输出长度=2948
+2026-04-10 20:58:49.389 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:58:49.389 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: NLP Methods for Clinical Note Information Extraction and Str
+2026-04-10 20:58:49.391 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-10 20:58:49.391 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [conclusion] 章节...
+2026-04-10 20:58:58.535 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [conclusion] 生成完成 (1653 字符)
+2026-04-10 20:58:58.536 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [conclusion] 生成完成 | 方法=ours | 检索=0 → 过滤=0 | 输出长度=1653
+2026-04-10 20:58:59.539 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [ours] 完成
+2026-04-10 20:59:01.540 | INFO     | src.inference.pipeline:run_comparison_experiment:226 - 
+##################################################
+2026-04-10 20:59:01.540 | INFO     | src.inference.pipeline:run_comparison_experiment:227 - 对比实验进度: 3/3 | Federated Learning Frameworks for Privacy-Preserving Medical...
+2026-04-10 20:59:01.541 | INFO     | src.inference.pipeline:run_comparison_experiment:228 - ##################################################
+2026-04-10 20:59:01.542 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:59:01.542 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: Federated Learning Frameworks for Privacy-Preserving Medical
+2026-04-10 20:59:01.542 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-10 20:59:01.542 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [topic] 章节...
+2026-04-10 20:59:15.315 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [topic] 生成完成 (2350 字符)
+2026-04-10 20:59:15.315 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [topic] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=2350
+2026-04-10 20:59:16.318 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:59:16.318 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: Federated Learning Frameworks for Privacy-Preserving Medical
+2026-04-10 20:59:16.319 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-10 20:59:16.320 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [background] 章节...
+2026-04-10 20:59:30.570 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [background] 生成完成 (2418 字符)
+2026-04-10 20:59:30.571 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [background] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=2418
+2026-04-10 20:59:31.572 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:59:31.572 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: Federated Learning Frameworks for Privacy-Preserving Medical
+2026-04-10 20:59:31.573 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-10 20:59:31.573 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [related_work] 章节...
+2026-04-10 20:59:53.855 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [related_work] 生成完成 (3476 字符)
+2026-04-10 20:59:53.856 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [related_work] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=3476
+2026-04-10 20:59:54.857 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 20:59:54.857 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: Federated Learning Frameworks for Privacy-Preserving Medical
+2026-04-10 20:59:54.859 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-10 20:59:54.860 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [methodology] 章节...
+2026-04-10 21:00:24.395 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [methodology] 生成完成 (3053 字符)
+2026-04-10 21:00:24.395 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [methodology] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=3053
+2026-04-10 21:00:25.397 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 21:00:25.397 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: Federated Learning Frameworks for Privacy-Preserving Medical
+2026-04-10 21:00:25.398 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-10 21:00:25.398 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [result] 章节...
+2026-04-10 21:01:11.870 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [result] 生成完成 (2793 字符)
+2026-04-10 21:01:11.871 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [result] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=2793
+2026-04-10 21:01:12.873 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 21:01:12.873 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: Federated Learning Frameworks for Privacy-Preserving Medical
+2026-04-10 21:01:12.874 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-10 21:01:12.874 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [conclusion] 章节...
+2026-04-10 21:01:28.795 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [conclusion] 生成完成 (2675 字符)
+2026-04-10 21:01:28.796 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [conclusion] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=2675
+2026-04-10 21:01:29.798 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [no_rag] 完成
+2026-04-10 21:01:31.798 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 21:01:31.798 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: Federated Learning Frameworks for Privacy-Preserving Medical
+2026-04-10 21:01:31.800 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-10 21:01:31.800 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [topic] 章节...
+2026-04-10 21:01:54.212 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [topic] 生成完成 (2110 字符)
+2026-04-10 21:01:54.215 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [topic] 生成完成 | 方法=rag | 检索=0 → 过滤=0 | 输出长度=2110
+2026-04-10 21:01:55.216 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 21:01:55.216 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: Federated Learning Frameworks for Privacy-Preserving Medical
+2026-04-10 21:01:55.218 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-10 21:01:55.218 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [background] 章节...
+2026-04-10 21:02:24.723 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [background] 生成完成 (3753 字符)
+2026-04-10 21:02:24.724 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [background] 生成完成 | 方法=rag | 检索=0 → 过滤=0 | 输出长度=3753
+2026-04-10 21:02:25.726 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 21:02:25.726 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: Federated Learning Frameworks for Privacy-Preserving Medical
+2026-04-10 21:02:25.728 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-10 21:02:25.728 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [related_work] 章节...
+2026-04-10 21:02:47.834 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [related_work] 生成完成 (3505 字符)
+2026-04-10 21:02:47.834 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [related_work] 生成完成 | 方法=rag | 检索=0 → 过滤=0 | 输出长度=3505
+2026-04-10 21:02:48.837 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 21:02:48.837 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: Federated Learning Frameworks for Privacy-Preserving Medical
+2026-04-10 21:02:48.838 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-10 21:02:48.838 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [methodology] 章节...
+2026-04-10 21:03:31.734 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [methodology] 生成完成 (3762 字符)
+2026-04-10 21:03:31.734 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [methodology] 生成完成 | 方法=rag | 检索=0 → 过滤=0 | 输出长度=3762
+2026-04-10 21:03:32.737 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 21:03:32.737 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: Federated Learning Frameworks for Privacy-Preserving Medical
+2026-04-10 21:03:32.739 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-10 21:03:32.740 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [result] 章节...
+2026-04-10 21:03:53.410 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [result] 生成完成 (2554 字符)
+2026-04-10 21:03:53.412 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [result] 生成完成 | 方法=rag | 检索=0 → 过滤=0 | 输出长度=2554
+2026-04-10 21:03:54.416 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 21:03:54.417 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: Federated Learning Frameworks for Privacy-Preserving Medical
+2026-04-10 21:03:54.419 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-10 21:03:54.420 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [conclusion] 章节...
+2026-04-10 21:04:07.139 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [conclusion] 生成完成 (2453 字符)
+2026-04-10 21:04:07.140 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [conclusion] 生成完成 | 方法=rag | 检索=0 → 过滤=0 | 输出长度=2453
+2026-04-10 21:04:08.142 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [rag] 完成
+2026-04-10 21:04:10.142 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 21:04:10.142 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: Federated Learning Frameworks for Privacy-Preserving Medical
+2026-04-10 21:04:10.143 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-10 21:04:10.144 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [topic] 章节...
+2026-04-10 21:04:36.596 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [topic] 生成完成 (2280 字符)
+2026-04-10 21:04:36.596 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [topic] 生成完成 | 方法=ours | 检索=0 → 过滤=0 | 输出长度=2280
+2026-04-10 21:04:37.600 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 21:04:37.600 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: Federated Learning Frameworks for Privacy-Preserving Medical
+2026-04-10 21:04:37.601 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-10 21:04:37.602 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [background] 章节...
+2026-04-10 21:04:45.652 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [background] 生成完成 (1432 字符)
+2026-04-10 21:04:45.652 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [background] 生成完成 | 方法=ours | 检索=0 → 过滤=0 | 输出长度=1432
+2026-04-10 21:04:46.655 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 21:04:46.655 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: Federated Learning Frameworks for Privacy-Preserving Medical
+2026-04-10 21:04:46.656 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-10 21:04:46.657 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [related_work] 章节...
+2026-04-10 21:05:55.324 | WARNING  | src.utils.llm_client:chat:114 - API 调用失败 (尝试 1/3): Connection error.
+2026-04-10 21:06:19.112 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [related_work] 生成完成 (3427 字符)
+2026-04-10 21:06:19.112 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [related_work] 生成完成 | 方法=ours | 检索=0 → 过滤=0 | 输出长度=3427
+2026-04-10 21:06:20.115 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 21:06:20.116 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: Federated Learning Frameworks for Privacy-Preserving Medical
+2026-04-10 21:06:20.117 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-10 21:06:20.117 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [methodology] 章节...
+2026-04-10 21:06:40.692 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [methodology] 生成完成 (3278 字符)
+2026-04-10 21:06:40.693 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [methodology] 生成完成 | 方法=ours | 检索=0 → 过滤=0 | 输出长度=3278
+2026-04-10 21:06:41.694 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 21:06:41.694 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: Federated Learning Frameworks for Privacy-Preserving Medical
+2026-04-10 21:06:41.696 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-10 21:06:41.696 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [result] 章节...
+2026-04-10 21:07:20.405 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [result] 生成完成 (2953 字符)
+2026-04-10 21:07:20.405 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [result] 生成完成 | 方法=ours | 检索=0 → 过滤=0 | 输出长度=2953
+2026-04-10 21:07:21.407 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-10 21:07:21.407 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: Federated Learning Frameworks for Privacy-Preserving Medical
+2026-04-10 21:07:21.409 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-10 21:07:21.410 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [conclusion] 章节...
+2026-04-10 21:08:01.746 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [conclusion] 生成完成 (2214 字符)
+2026-04-10 21:08:01.747 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [conclusion] 生成完成 | 方法=ours | 检索=0 → 过滤=0 | 输出长度=2214
+2026-04-10 21:08:02.749 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [ours] 完成
+2026-04-10 21:08:04.749 | INFO     | src.inference.pipeline:run_comparison_experiment:242 - 
+结果统计 [no_rag]: 3/3 成功
+2026-04-10 21:08:04.751 | INFO     | src.inference.pipeline:run_comparison_experiment:242 - 
+结果统计 [rag]: 2/3 成功
+2026-04-10 21:08:04.753 | INFO     | src.inference.pipeline:run_comparison_experiment:242 - 
+结果统计 [ours]: 1/3 成功
+2026-04-10 21:08:04.757 | INFO     | __main__:_run_full_pipeline:132 - Step 4/4: 评估对比结果...
+2026-04-10 21:08:04.779 | INFO     | src.utils.llm_client:__init__:52 - 初始化 LLM 客户端: dashscope/deepseek-v3
+2026-04-10 21:08:04.785 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [topic] 章节 (2592 字符)...
+2026-04-10 21:08:12.584 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [topic] 评估完成 | 总分=3.84
+2026-04-10 21:08:12.585 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [background] 章节 (2521 字符)...
+2026-04-10 21:08:21.065 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [background] 评估完成 | 总分=3.75
+2026-04-10 21:08:21.065 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (4491 字符)...
+2026-04-10 21:08:29.709 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=3.60
+2026-04-10 21:08:29.711 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [methodology] 章节 (4036 字符)...
+2026-04-10 21:08:39.211 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [methodology] 评估完成 | 总分=3.85
+2026-04-10 21:08:39.212 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [result] 章节 (3144 字符)...
+2026-04-10 21:08:47.944 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [result] 评估完成 | 总分=4.15
+2026-04-10 21:08:47.945 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (2220 字符)...
+2026-04-10 21:08:56.194 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=4.15
+2026-04-10 21:08:56.195 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [topic] 章节 (2491 字符)...
+2026-04-10 21:09:03.303 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [topic] 评估完成 | 总分=3.00
+2026-04-10 21:09:03.304 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [background] 章节 (3465 字符)...
+2026-04-10 21:09:11.380 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [background] 评估完成 | 总分=3.75
+2026-04-10 21:09:11.381 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (3399 字符)...
+2026-04-10 21:09:19.723 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=3.40
+2026-04-10 21:09:19.723 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [methodology] 章节 (3495 字符)...
+2026-04-10 21:09:28.251 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [methodology] 评估完成 | 总分=3.85
+2026-04-10 21:09:28.251 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [result] 章节 (2776 字符)...
+2026-04-10 21:09:37.110 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [result] 评估完成 | 总分=4.25
+2026-04-10 21:09:37.110 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (1689 字符)...
+2026-04-10 21:09:45.705 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=3.25
+2026-04-10 21:09:45.706 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [topic] 章节 (2350 字符)...
+2026-04-10 21:09:53.033 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [topic] 评估完成 | 总分=4.00
+2026-04-10 21:09:53.034 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [background] 章节 (2418 字符)...
+2026-04-10 21:10:01.044 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [background] 评估完成 | 总分=3.75
+2026-04-10 21:10:01.045 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (3476 字符)...
+2026-04-10 21:10:10.289 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=4.15
+2026-04-10 21:10:10.290 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [methodology] 章节 (3053 字符)...
+2026-04-10 21:10:18.212 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [methodology] 评估完成 | 总分=4.05
+2026-04-10 21:10:18.213 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [result] 章节 (2793 字符)...
+2026-04-10 21:10:26.610 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [result] 评估完成 | 总分=4.25
+2026-04-10 21:10:26.610 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (2675 字符)...
+2026-04-10 21:10:34.555 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=4.15
+2026-04-10 21:10:34.556 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [topic] 章节 (2607 字符)...
+2026-04-10 21:10:42.488 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [topic] 评估完成 | 总分=4.00
+2026-04-10 21:10:42.489 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [background] 章节 (1984 字符)...
+2026-04-10 21:10:51.919 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [background] 评估完成 | 总分=3.75
+2026-04-10 21:10:51.919 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (3427 字符)...
+2026-04-10 21:11:00.916 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=4.15
+2026-04-10 21:11:00.916 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [methodology] 章节 (3658 字符)...
+2026-04-10 21:11:11.347 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [methodology] 评估完成 | 总分=4.05
+2026-04-10 21:11:11.348 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [result] 章节 (2003 字符)...
+2026-04-10 21:11:20.522 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [result] 评估完成 | 总分=4.15
+2026-04-10 21:11:20.524 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (2395 字符)...
+2026-04-10 21:11:29.228 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=3.25
+2026-04-10 21:11:29.230 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [topic] 章节 (2055 字符)...
+2026-04-10 21:11:36.273 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [topic] 评估完成 | 总分=4.00
+2026-04-10 21:11:36.273 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [background] 章节 (3485 字符)...
+2026-04-10 21:11:44.782 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [background] 评估完成 | 总分=3.70
+2026-04-10 21:11:44.784 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (3849 字符)...
+2026-04-10 21:11:53.786 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=4.15
+2026-04-10 21:11:53.787 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [methodology] 章节 (3228 字符)...
+2026-04-10 21:12:02.109 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [methodology] 评估完成 | 总分=4.00
+2026-04-10 21:12:02.110 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [result] 章节 (2671 字符)...
+2026-04-10 21:12:11.087 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [result] 评估完成 | 总分=4.15
+2026-04-10 21:12:11.088 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (1918 字符)...
+2026-04-10 21:12:20.014 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=3.25
+2026-04-10 21:12:20.014 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [topic] 章节 (2110 字符)...
+2026-04-10 21:12:27.150 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [topic] 评估完成 | 总分=4.00
+2026-04-10 21:12:27.150 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [background] 章节 (3753 字符)...
+2026-04-10 21:12:36.576 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [background] 评估完成 | 总分=3.70
+2026-04-10 21:12:36.576 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (3505 字符)...
+2026-04-10 21:12:45.705 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=3.60
+2026-04-10 21:12:45.706 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [result] 章节 (2554 字符)...
+2026-04-10 21:12:54.267 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [result] 评估完成 | 总分=3.90
+2026-04-10 21:12:54.267 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (2453 字符)...
+2026-04-10 21:13:03.068 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=3.00
+2026-04-10 21:13:03.069 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [topic] 章节 (2125 字符)...
+2026-04-10 21:13:10.070 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [topic] 评估完成 | 总分=4.00
+2026-04-10 21:13:10.070 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [background] 章节 (2705 字符)...
+2026-04-10 21:13:18.734 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [background] 评估完成 | 总分=3.75
+2026-04-10 21:13:18.734 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (3423 字符)...
+2026-04-10 21:13:26.345 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=3.13
+2026-04-10 21:13:26.346 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [methodology] 章节 (4016 字符)...
+2026-04-10 21:13:35.432 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [methodology] 评估完成 | 总分=3.95
+2026-04-10 21:13:35.432 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [result] 章节 (2876 字符)...
+2026-04-10 21:13:42.559 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [result] 评估完成 | 总分=1.00
+2026-04-10 21:13:42.560 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (2087 字符)...
+2026-04-10 21:13:51.726 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=3.00
+2026-04-10 21:13:51.728 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [topic] 章节 (2472 字符)...
+2026-04-10 21:13:58.861 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [topic] 评估完成 | 总分=4.00
+2026-04-10 21:13:58.863 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [background] 章节 (3438 字符)...
+2026-04-10 21:14:09.051 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [background] 评估完成 | 总分=3.70
+2026-04-10 21:14:09.051 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (3699 字符)...
+2026-04-10 21:14:17.289 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=3.58
+2026-04-10 21:14:17.290 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [result] 章节 (2948 字符)...
+2026-04-10 21:14:28.175 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [result] 评估完成 | 总分=4.15
+2026-04-10 21:14:28.175 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (1653 字符)...
+2026-04-10 21:14:36.175 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=3.50
+2026-04-10 21:14:36.175 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [topic] 章节 (2280 字符)...
+2026-04-10 21:14:44.824 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [topic] 评估完成 | 总分=4.00
+2026-04-10 21:14:44.824 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [background] 章节 (1432 字符)...
+2026-04-10 21:14:53.660 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [background] 评估完成 | 总分=3.70
+2026-04-10 21:14:53.660 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (3427 字符)...
+2026-04-10 21:15:02.377 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=3.58
+2026-04-10 21:15:02.377 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [methodology] 章节 (3278 字符)...
+2026-04-10 21:15:12.065 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [methodology] 评估完成 | 总分=4.00
+2026-04-10 21:15:12.066 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (2214 字符)...
+2026-04-10 21:15:19.579 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=3.50
+2026-04-10 21:15:19.581 | INFO     | __main__:format_and_save_report:238 - 
+📊 评估报告已保存:
+2026-04-10 21:15:19.581 | INFO     | __main__:format_and_save_report:239 -    文本版: results\evaluation\benchmark_report_20260410_211519.txt
+2026-04-10 21:15:19.581 | INFO     | __main__:format_and_save_report:240 -    数据版: results\evaluation\benchmark_results.json
+2026-04-12 19:08:59.468 | INFO     | __main__:main:54 - 🚀 FRAME Phase 5: 评估阶段 开始
+2026-04-12 19:08:59.471 | INFO     | __main__:_evaluate_existing_results:169 - 加载推理结果: results/inference/comparison_results.json
+2026-04-12 19:09:01.434 | INFO     | src.utils.embedding:__init__:36 - 检测到 GPU: NVIDIA GeForce RTX 3050 Laptop GPU (4.0 GB)
+2026-04-12 19:09:02.950 | INFO     | src.utils.embedding:_init_openai:85 - 使用 API Embedding | 模型=text-embedding-v1 | 维度=1536
+2026-04-12 19:09:02.960 | INFO     | src.utils.llm_client:__init__:70 - 初始化 LLM 客户端 (requests): vllm/Qwen/Qwen2.5-7B-Instruct
+2026-04-12 19:09:02.965 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [background] 章节 (3916 字符)...
+2026-04-12 19:09:09.667 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1498 chars): ```json
+{
+    "dimension_scores": {
+        "completeness": {"score": 4.3, "reason": "Provides comprehensive context and background, covering both the basics of medical imaging and CT scans, as well as the role of deep learning in medical image analysis."},
+        "content_depth": {"score": 4.1, "r
+2026-04-12 19:09:09.668 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [background] 评估完成 | 总分=4.55
+2026-04-12 19:09:09.668 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (5909 字符)...
+2026-04-12 19:09:16.508 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1633 chars): ```json
+{
+    "dimension_scores": {
+        "diversity": {"score": 4.3, "reason": "The section covers a wide range of topics including architectural innovations, data augmentation, transfer learning, and ensemble methods, providing a broad overview of the field."},
+        "coverage": {"score": 4.5,
+2026-04-12 19:09:16.508 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=4.27
+2026-04-12 19:09:16.508 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [methodology] 章节 (4944 字符)...
+2026-04-12 19:09:22.820 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1412 chars): ```json
+{
+    "dimension_scores": {
+        "coherence": {"score": 4.8, "reason": "The methodology is well-structured and logically flows from experimental design to evaluation metrics. However, some sections could be more clearly linked."},
+        "completeness": {"score": 4.6, "reason": "All nece
+2026-04-12 19:09:22.820 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [methodology] 评估完成 | 总分=4.70
+2026-04-12 19:09:22.820 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [result] 章节 (3666 字符)...
+2026-04-12 19:09:30.150 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1676 chars): ```json
+{
+    "dimension_scores": {
+        "numerical_accuracy": {"score": 4.8, "reason": "The numerical values are accurate and include appropriate standard deviations. However, there is a minor typographical error in the sensitivity and specificity values for the RNN model."},
+        "clarity": 
+2026-04-12 19:09:30.150 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [result] 评估完成 | 总分=4.50
+2026-04-12 19:09:30.150 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (2347 字符)...
+2026-04-12 19:09:36.506 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1481 chars): ```json
+{
+    "dimension_scores": {
+        "comprehensiveness": {"score": 4.8, "reason": "The conclusion effectively summarizes the key findings, including the use of CNNs and GANs, and their superior performance in various tasks."},
+        "summary_quality": {"score": 4.6, "reason": "The summary 
+2026-04-12 19:09:36.506 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=4.70
+2026-04-12 19:09:36.507 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [topic] 章节 (2321 字符)...
+2026-04-12 19:09:41.677 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1149 chars): ```json
+{
+    "dimension_scores": {
+        "completeness": {"score": 4.8, "reason": "The introduction covers the core research problem comprehensively, discussing the importance of NLP in clinical notes and the challenges faced by traditional methods."},
+        "content_quality": {"score": 4.6, "r
+2026-04-12 19:09:41.679 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [topic] 评估完成 | 总分=4.74
+2026-04-12 19:09:41.679 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [background] 章节 (4418 字符)...
+2026-04-12 19:09:48.458 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1539 chars): ```json
+{
+    "dimension_scores": {
+        "completeness": {"score": 4.3, "reason": "The section provides a comprehensive overview of the context, challenges, and foundational concepts related to NLP in clinical notes. It covers most aspects necessary for understanding the research topic."},
+      
+2026-04-12 19:09:48.459 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [background] 评估完成 | 总分=4.50
+2026-04-12 19:09:48.459 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (4260 字符)...
+2026-04-12 19:09:54.605 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1400 chars): ```json
+{
+    "dimension_scores": {
+        "diversity": {"score": 4.3, "reason": "Covers a wide range of NLP techniques (rule-based, ML, DL) and discusses various challenges and limitations."},
+        "coverage": {"score": 4.5, "reason": "Comprehensive discussion of existing methods, challenges, a
+2026-04-12 19:09:54.605 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=4.30
+2026-04-12 19:09:54.605 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [methodology] 章节 (4633 字符)...
+2026-04-12 19:10:01.495 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1590 chars): ```json
+{
+    "dimension_scores": {
+        "coherence": {"score": 4.8, "reason": "The methodology is well-organized and logically flows from the experimental design to the evaluation metrics. However, there could be minor improvements in the flow of some sections."},
+        "completeness": {"score
+2026-04-12 19:10:01.495 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [methodology] 评估完成 | 总分=4.75
+2026-04-12 19:10:01.496 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [result] 章节 (2825 字符)...
+2026-04-12 19:10:09.339 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1813 chars): ```json
+{
+    "dimension_scores": {
+        "numerical_accuracy": {"score": 4.8, "reason": "The numerical values are accurate and well-presented in Table 1 and Figure 1. However, there is a minor inconsistency in the precision and recall values for the BERT model, which should be double-checked."},
+
+2026-04-12 19:10:09.339 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [result] 评估完成 | 总分=4.50
+2026-04-12 19:10:09.339 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (2557 字符)...
+2026-04-12 19:10:15.423 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1445 chars): ```json
+{
+    "dimension_scores": {
+        "comprehensiveness": {"score": 4.8, "reason": "The conclusion effectively summarizes the key findings, including the development of a novel NLP model and its superior performance."},
+        "summary_quality": {"score": 4.6, "reason": "The summary is conci
+2026-04-12 19:10:15.424 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=4.70
+2026-04-12 19:10:15.424 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [topic] 章节 (2890 字符)...
+2026-04-12 19:10:20.997 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1269 chars): ```json
+{
+    "dimension_scores": {
+        "completeness": {"score": 4.8, "reason": "The introduction covers the core research problem comprehensively, discussing the challenges and potential of federated learning in medical AI."},
+        "content_quality": {"score": 4.6, "reason": "The content is
+2026-04-12 19:10:20.997 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [topic] 评估完成 | 总分=4.70
+2026-04-12 19:10:20.997 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [background] 章节 (5139 字符)...
+2026-04-12 19:10:27.600 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1524 chars): ```json
+{
+    "dimension_scores": {
+        "completeness": {"score": 4.8, "reason": "The section provides a comprehensive overview of the challenges and solutions related to AI in healthcare, specifically focusing on privacy concerns and federated learning."},
+        "content_depth": {"score": 4.6
+2026-04-12 19:10:27.600 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [background] 评估完成 | 总分=4.70
+2026-04-12 19:10:27.600 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (4893 字符)...
+2026-04-12 19:10:34.373 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1645 chars): ```json
+{
+    "dimension_scores": {
+        "diversity": {"score": 4.3, "reason": "Covers a wide range of relevant sources including centralized vs. decentralized learning, challenges and limitations, specific healthcare applications, and research gaps."},
+        "coverage": {"score": 4.6, "reason"
+2026-04-12 19:10:34.373 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=4.30
+2026-04-12 19:10:34.373 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [methodology] 章节 (5096 字符)...
+2026-04-12 19:10:40.557 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1389 chars): ```json
+{
+    "dimension_scores": {
+        "coherence": {"score": 4.8, "reason": "The methodology is well-structured and logically flows from experimental design to evaluation metrics. However, some steps could be more clearly connected."},
+        "completeness": {"score": 4.5, "reason": "All nece
+2026-04-12 19:10:40.557 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [methodology] 评估完成 | 总分=4.70
+2026-04-12 19:10:40.557 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [result] 章节 (3630 字符)...
+2026-04-12 19:10:48.221 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1798 chars): ```json
+{
+    "dimension_scores": {
+        "numerical_accuracy": {"score": 4.8, "reason": "The numerical values are accurate and well-presented in tables and figures. However, there is a minor typo in 'Federated Transfer Learning (FTL)' which should be consistent throughout the text."},
+        "cl
+2026-04-12 19:10:48.221 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [result] 评估完成 | 总分=4.45
+2026-04-12 19:10:48.221 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (2824 字符)...
+2026-04-12 19:10:54.457 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1494 chars): ```json
+{
+    "dimension_scores": {
+        "comprehensiveness": {"score": 4.8, "reason": "The conclusion comprehensively summarizes the key findings, including the successful implementation of a novel federated learning architecture and its benefits."},
+        "summary_quality": {"score": 4.6, "re
+2026-04-12 19:10:54.457 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=4.70
+2026-04-12 19:10:54.457 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [topic] 章节 (2750 字符)...
+2026-04-12 19:10:59.719 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1182 chars): ```json
+{
+    "dimension_scores": {
+        "completeness": {"score": 4.8, "reason": "The introduction covers the core research problem comprehensively, discussing the significance and challenges of automated radiology report generation."},
+        "content_quality": {"score": 4.6, "reason": "The co
+2026-04-12 19:10:59.720 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [topic] 评估完成 | 总分=4.68
+2026-04-12 19:10:59.720 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [methodology] 章节 (4105 字符)...
+2026-04-12 19:11:06.004 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1432 chars): ```json
+{
+    "dimension_scores": {
+        "coherence": {"score": 4.8, "reason": "The methodology is well-organized and logically flows from data acquisition to evaluation. However, there could be more explicit connections between some sections."},
+        "completeness": {"score": 4.6, "reason": "
+2026-04-12 19:11:06.004 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [methodology] 评估完成 | 总分=4.75
+2026-04-12 19:11:06.004 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [result] 章节 (3376 字符)...
+2026-04-12 19:11:12.907 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1576 chars): ```json
+{
+    "dimension_scores": {
+        "numerical_accuracy": {"score": 4.8, "reason": "The numerical values are accurate and well-presented in tables and figures. The statistical tests are correctly applied and reported."},
+        "clarity": {"score": 4.5, "reason": "Results are generally clea
+2026-04-12 19:11:12.907 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [result] 评估完成 | 总分=4.50
+2026-04-12 19:11:12.907 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (2192 字符)...
+2026-04-12 19:11:19.384 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1559 chars): ```json
+{
+    "dimension_scores": {
+        "comprehensiveness": {"score": 4.8, "reason": "The conclusion effectively summarizes key findings related to the development of a novel deep learning model for automated radiology report generation, its benefits, and limitations."},
+        "summary_qualit
+2026-04-12 19:11:19.384 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=4.65
+2026-04-12 19:11:19.384 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [topic] 章节 (2483 字符)...
+2026-04-12 19:11:25.496 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1414 chars): ```json
+{
+    "dimension_scores": {
+        "completeness": {"score": 4.8, "reason": "The introduction covers the core research problem comprehensively, discussing the importance of molecular property prediction in drug discovery and the limitations of traditional methods."},
+        "content_qualit
+2026-04-12 19:11:25.496 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [topic] 评估完成 | 总分=4.75
+2026-04-12 19:11:25.497 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [background] 章节 (3710 字符)...
+2026-04-12 19:11:33.149 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1797 chars): ```json
+{
+    "dimension_scores": {
+        "completeness": {"score": 4.8, "reason": "The section provides a comprehensive overview of the importance of molecular property prediction and the limitations of traditional methods. It also covers the advancements brought by machine learning, especially G
+2026-04-12 19:11:33.149 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [background] 评估完成 | 总分=4.68
+2026-04-12 19:11:33.149 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (4644 字符)...
+2026-04-12 19:11:39.903 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1543 chars): ```json
+{
+    "dimension_scores": {
+        "diversity": {"score": 4.3, "reason": "Covers a wide range of relevant sources including SchNet, GCN, message passing framework, attention mechanisms, and transfer learning/pre-training."},
+        "coverage": {"score": 4.6, "reason": "Comprehensively cove
+2026-04-12 19:11:39.904 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=4.35
+2026-04-12 19:11:39.904 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (2896 字符)...
+2026-04-12 19:11:47.447 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1859 chars): ```json
+{
+    "dimension_scores": {
+        "comprehensiveness": {"score": 4.8, "reason": "Comprehensively summarizes key findings including model performance, interpretability, and practical implications. However, it could slightly improve by mentioning specific metrics or benchmarks used."},
+     
+2026-04-12 19:11:47.447 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=4.70
+2026-04-12 19:11:47.447 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [background] 章节 (5938 字符)...
+2026-04-12 19:11:55.190 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1916 chars): ```json
+{
+    "dimension_scores": {
+        "completeness": {"score": 4.3, "reason": "The section provides a comprehensive overview of deep learning and its applications in CT-based medical image analysis, covering foundational concepts, technical details, and specific studies. However, it could ben
+2026-04-12 19:11:55.190 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [background] 评估完成 | 总分=4.45
+2026-04-12 19:11:55.190 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (5437 字符)...
+2026-04-12 19:12:02.185 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1668 chars): ```json
+{
+    "dimension_scores": {
+        "diversity": {"score": 4.3, "reason": "The section covers a variety of topics including deep learning architectures, text data augmentation, bioimaging software tools, and comparative studies, providing a broad overview of the field."},
+        "coverage":
+2026-04-12 19:12:02.185 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=4.30
+2026-04-12 19:12:02.185 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [methodology] 章节 (4250 字符)...
+2026-04-12 19:12:09.301 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1647 chars): ```json
+{
+    "dimension_scores": {
+        "coherence": {"score": 4.8, "reason": "The methodology is well-organized and logically flows from data collection to model training and evaluation. However, there could be slight improvements in the flow between sections."},
+        "completeness": {"score
+2026-04-12 19:12:09.301 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [methodology] 评估完成 | 总分=4.70
+2026-04-12 19:12:09.301 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [result] 章节 (3625 字符)...
+2026-04-12 19:12:17.366 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1940 chars): ```json
+{
+    "dimension_scores": {
+        "numerical_accuracy": {"score": 4.8, "reason": "The numerical data is accurate and well-presented in tables and figures. However, there is no mention of confidence intervals or standard deviations, which would enhance the precision of the results."},
+     
+2026-04-12 19:12:17.367 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [result] 评估完成 | 总分=4.50
+2026-04-12 19:12:17.367 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (2830 字符)...
+2026-04-12 19:12:23.735 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1510 chars): ```json
+{
+    "dimension_scores": {
+        "comprehensiveness": {"score": 4.8, "reason": "The conclusion effectively summarizes the key findings, including the specific method used and the percentage increase in diagnostic accuracy."},
+        "summary_quality": {"score": 4.6, "reason": "The summar
+2026-04-12 19:12:23.735 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=4.65
+2026-04-12 19:12:23.736 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (4039 字符)...
+2026-04-12 19:12:30.427 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1555 chars): ```json
+{
+    "dimension_scores": {
+        "diversity": {"score": 4.3, "reason": "The section covers a wide range of NLP techniques including rule-based, machine learning, and deep learning methods, as well as ensemble and hybrid approaches."},
+        "coverage": {"score": 4.6, "reason": "It provi
+2026-04-12 19:12:30.427 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=4.25
+2026-04-12 19:12:30.427 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [methodology] 章节 (5495 字符)...
+2026-04-12 19:12:37.562 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1641 chars): ```json
+{
+    "dimension_scores": {
+        "coherence": {"score": 4.8, "reason": "The sections are well-organized and logically flow from the experimental design to the evaluation metrics. However, there could be more explicit connections between some sections."},
+        "completeness": {"score": 
+2026-04-12 19:12:37.562 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [methodology] 评估完成 | 总分=4.72
+2026-04-12 19:12:37.563 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [result] 章节 (4213 字符)...
+2026-04-12 19:12:45.329 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1883 chars): ```json
+{
+    "dimension_scores": {
+        "numerical_accuracy": {"score": 4.8, "reason": "The numerical data provided are accurate and well-formatted. However, there is no mention of the confidence intervals or standard errors, which would enhance the accuracy further."},
+        "clarity": {"scor
+2026-04-12 19:12:45.329 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [result] 评估完成 | 总分=4.50
+2026-04-12 19:12:45.329 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [topic] 章节 (3884 字符)...
+2026-04-12 19:12:52.249 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1704 chars): ```json
+{
+    "dimension_scores": {
+        "completeness": {"score": 4.8, "reason": "The introduction covers the core research problem comprehensively, discussing the significance of federated learning in medical AI and its challenges. It also outlines the research objectives and provides concrete 
+2026-04-12 19:12:52.249 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [topic] 评估完成 | 总分=4.68
+2026-04-12 19:12:52.250 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [background] 章节 (5404 字符)...
+2026-04-12 19:13:00.048 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1920 chars): ```json
+{
+    "dimension_scores": {
+        "completeness": {"score": 4.3, "reason": "The section provides a comprehensive overview of federated learning, privacy-preserving techniques, and their applications in healthcare. It covers foundational concepts, technical details, and challenges, though s
+2026-04-12 19:13:00.048 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [background] 评估完成 | 总分=4.45
+2026-04-12 19:13:00.048 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (4652 字符)...
+2026-04-12 19:13:07.249 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1766 chars): ```json
+{
+    "dimension_scores": {
+        "diversity": {"score": 4.3, "reason": "The section covers a variety of relevant sources including BioBERT, FedAvg, differential privacy, secure multi-party computation, and homomorphic encryption, as well as specific case studies and applications."},
+     
+2026-04-12 19:13:07.249 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=4.30
+2026-04-12 19:13:07.249 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [methodology] 章节 (3642 字符)...
+2026-04-12 19:13:14.290 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1637 chars): ```json
+{
+    "dimension_scores": {
+        "coherence": {"score": 4.8, "reason": "The methodology is well-organized and clearly explains the steps involved in data collection, preprocessing, model development, evaluation, and implementation. However, there is room for more detailed explanation of s
+2026-04-12 19:13:14.290 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [methodology] 评估完成 | 总分=4.70
+2026-04-12 19:13:14.290 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [result] 章节 (5079 字符)...
+2026-04-12 19:13:21.565 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1684 chars): ```json
+{
+    "dimension_scores": {
+        "numerical_accuracy": {"score": 4.8, "reason": "The numerical values in tables and figures are accurate and well-presented. However, there could be a minor improvement in precision, such as specifying the number of decimal places."},
+        "clarity": {"s
+2026-04-12 19:13:21.565 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [result] 评估完成 | 总分=4.50
+2026-04-12 19:13:21.566 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (3156 字符)...
+2026-04-12 19:13:27.554 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1378 chars): ```json
+{
+    "dimension_scores": {
+        "comprehensiveness": {"score": 4.8, "reason": "The conclusion effectively summarizes the key findings, including the improvement in model performance and the mitigation of privacy risks."},
+        "summary_quality": {"score": 4.6, "reason": "The summary i
+2026-04-12 19:13:27.554 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=4.60
+2026-04-12 19:13:27.555 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [background] 章节 (4836 字符)...
+2026-04-12 19:13:36.016 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (2048 chars): ```json
+{
+    "dimension_scores": {
+        "completeness": {"score": 4.8, "reason": "The section covers a wide range of topics related to AI in radiology, including historical development, current advancements, challenges, and integration with existing workflows. It provides sufficient context and 
+2026-04-12 19:13:36.016 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [background] 评估完成 | 总分=4.70
+2026-04-12 19:13:36.016 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (5711 字符)...
+2026-04-12 19:13:42.554 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1605 chars): ```json
+{
+    "dimension_scores": {
+        "diversity": {"score": 4.3, "reason": "The section covers a wide range of relevant sources including early machine learning methods, deep learning models, hybrid approaches, and newer techniques like reinforcement learning and transformers."},
+        "cov
+2026-04-12 19:13:42.554 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=4.30
+2026-04-12 19:13:42.555 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [methodology] 章节 (4817 字符)...
+2026-04-12 19:13:50.055 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1701 chars): ```json
+{
+    "dimension_scores": {
+        "coherence": {"score": 4.8, "reason": "The methodology is well-structured and logically flows from data acquisition to evaluation. Each section builds upon the previous one, providing a clear understanding of the process."},
+        "completeness": {"score
+2026-04-12 19:13:50.056 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [methodology] 评估完成 | 总分=4.75
+2026-04-12 19:13:50.056 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [result] 章节 (3744 字符)...
+2026-04-12 19:13:56.666 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1536 chars): ```json
+{
+    "dimension_scores": {
+        "numerical_accuracy": {"score": 4.8, "reason": "The numerical values provided are clear and precise, though no units or additional context are given for some metrics."},
+        "clarity": {"score": 4.5, "reason": "The results are generally well-presented 
+2026-04-12 19:13:56.666 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [result] 评估完成 | 总分=4.50
+2026-04-12 19:13:56.666 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (2101 字符)...
+2026-04-12 19:14:02.532 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1375 chars): ```json
+{
+    "dimension_scores": {
+        "comprehensiveness": {"score": 4.8, "reason": "The conclusion effectively summarizes the key findings, including the enhanced accuracy and efficiency of the machine learning system."},
+        "summary_quality": {"score": 4.6, "reason": "The summary is con
+2026-04-12 19:14:02.532 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=4.65
+2026-04-12 19:14:02.533 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [topic] 章节 (3163 字符)...
+2026-04-12 19:14:09.518 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1680 chars): ```json
+{
+    "dimension_scores": {
+        "completeness": {"score": 4.8, "reason": "The introduction covers the core research problem comprehensively, discussing the importance of molecular property prediction and the limitations of traditional methods. It also provides a clear rationale for using
+2026-04-12 19:14:09.518 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [topic] 评估完成 | 总分=4.68
+2026-04-12 19:14:09.518 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [background] 章节 (5762 字符)...
+2026-04-12 19:14:17.022 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1656 chars): ```json
+{
+    "dimension_scores": {
+        "completeness": {"score": 4.3, "reason": "Provides a comprehensive overview of GNNs, their applications, and challenges. However, some details could be expanded, especially in the early sections."},
+        "content_depth": {"score": 4.5, "reason": "Covers
+2026-04-12 19:14:17.022 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [background] 评估完成 | 总分=4.40
+2026-04-12 19:14:17.022 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (5210 字符)...
+2026-04-12 19:14:23.485 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1430 chars): ```json
+{
+    "dimension_scores": {
+        "diversity": {"score": 4.8, "reason": "Covers a wide range of GNN models including SchNet, GGNN, and GAT, and discusses various aspects of each model."},
+        "coverage": {"score": 4.6, "reason": "Comprehensive overview of GNN models and their applicati
+2026-04-12 19:14:23.486 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=4.50
+2026-04-12 19:14:23.486 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (2015 字符)...
+2026-04-12 19:14:31.901 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (2093 chars): ```json
+{
+    "dimension_scores": {
+        "comprehensiveness": {"score": 4.3, "reason": "The conclusion effectively summarizes key findings, including the role of astrocyte-specific features and their impact on model performance. However, it could benefit from a more detailed discussion of the bro
+2026-04-12 19:14:31.901 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=4.27
+2026-04-12 19:14:31.901 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [topic] 章节 (4160 字符)...
+2026-04-12 19:14:37.971 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1401 chars): ```json
+{
+    "dimension_scores": {
+        "completeness": {"score": 4.8, "reason": "The introduction covers the core aspects of deep learning in medical imaging, including its applications and challenges. It provides a comprehensive overview of the topic."},
+        "content_quality": {"score": 4.
+2026-04-12 19:14:37.973 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [topic] 评估完成 | 总分=4.68
+2026-04-12 19:14:37.973 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [methodology] 章节 (4600 字符)...
+2026-04-12 19:14:44.895 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1547 chars): ```json
+{
+    "dimension_scores": {
+        "coherence": {"score": 4.5, "reason": "The methodology is well-structured and logically flows from data collection to model evaluation. However, some steps could be more clearly connected."},
+        "completeness": {"score": 4.8, "reason": "All necessary 
+2026-04-12 19:14:44.895 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [methodology] 评估完成 | 总分=4.65
+2026-04-12 19:14:44.895 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [result] 章节 (4069 字符)...
+2026-04-12 19:14:52.615 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1807 chars): ```json
+{
+    "dimension_scores": {
+        "numerical_accuracy": {"score": 4.8, "reason": "The numerical data is accurate and well-presented in tables and figures. However, the precision values for U-Net and VGG16 are very close, which might indicate minor rounding issues."},
+        "clarity": {"s
+2026-04-12 19:14:52.615 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [result] 评估完成 | 总分=4.50
+2026-04-12 19:14:52.615 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (2695 字符)...
+2026-04-12 19:14:58.923 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1460 chars): ```json
+{
+    "dimension_scores": {
+        "comprehensiveness": {"score": 4.8, "reason": "The conclusion effectively summarizes the key findings, including the development of a novel CNN architecture and its benefits."},
+        "summary_quality": {"score": 4.6, "reason": "The summary is concise bu
+2026-04-12 19:14:58.924 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=4.65
+2026-04-12 19:14:58.924 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [background] 章节 (4817 字符)...
+2026-04-12 19:15:06.303 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1675 chars): ```json
+{
+    "dimension_scores": {
+        "completeness": {"score": 4.8, "reason": "The section provides a comprehensive overview of NLP and biomedical text mining, and adequately covers the technical aspects of BioBERT. However, it could benefit from more specific examples and case studies."},
+  
+2026-04-12 19:15:06.303 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [background] 评估完成 | 总分=4.68
+2026-04-12 19:15:06.303 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (4618 字符)...
+2026-04-12 19:15:12.964 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1541 chars): ```json
+{
+    "dimension_scores": {
+        "diversity": {"score": 4.3, "reason": "Covers a wide range of relevant sources including early rule-based systems, machine learning models, and more recent deep learning techniques."},
+        "coverage": {"score": 4.5, "reason": "Comprehensively covers va
+2026-04-12 19:15:12.964 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=4.30
+2026-04-12 19:15:12.964 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [methodology] 章节 (4075 字符)...
+2026-04-12 19:15:21.152 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1943 chars): ```json
+{
+    "dimension_scores": {
+        "coherence": {"score": 4.5, "reason": "The sections are logically organized and flow well from data preprocessing to model training and evaluation. However, there could be more detailed explanations of some steps."},
+        "completeness": {"score": 4.8, 
+2026-04-12 19:15:21.153 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [methodology] 评估完成 | 总分=4.57
+2026-04-12 19:15:21.153 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [result] 章节 (3186 字符)...
+2026-04-12 19:15:29.072 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1898 chars): ```json
+{
+    "dimension_scores": {
+        "numerical_accuracy": {"score": 4.8, "reason": "The numerical values provided are accurate and well-supported by statistical tests and tables. However, there is a minor typographical error in 'F1' being used inconsistently as a variable name and a metric."
+2026-04-12 19:15:29.072 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [result] 评估完成 | 总分=4.65
+2026-04-12 19:15:29.072 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (3156 字符)...
+2026-04-12 19:15:35.170 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1453 chars): ```json
+{
+    "dimension_scores": {
+        "comprehensiveness": {"score": 4.8, "reason": "The conclusion effectively summarizes the key findings, including the development of a novel hybrid model and its superior performance."},
+        "summary_quality": {"score": 4.6, "reason": "The summary is co
+2026-04-12 19:15:35.170 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=4.70
+2026-04-12 19:15:35.170 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [topic] 章节 (3801 字符)...
+2026-04-12 19:15:40.911 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1281 chars): ```json
+{
+    "dimension_scores": {
+        "completeness": {"score": 4.8, "reason": "The introduction covers the core research problem comprehensively, discussing both the benefits and challenges of federated learning in medical AI."},
+        "content_quality": {"score": 4.6, "reason": "The conten
+2026-04-12 19:15:40.911 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [topic] 评估完成 | 总分=4.77
+2026-04-12 19:15:40.911 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [background] 章节 (4378 字符)...
+2026-04-12 19:15:48.754 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1894 chars): ```json
+{
+    "dimension_scores": {
+        "completeness": {"score": 4.3, "reason": "The section provides a comprehensive overview of AI in healthcare and introduces federated learning as a solution to privacy concerns. It covers both general and specific aspects but could benefit from more detaile
+2026-04-12 19:15:48.754 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [background] 评估完成 | 总分=4.45
+2026-04-12 19:15:48.754 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (5858 字符)...
+2026-04-12 19:15:55.211 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1509 chars): ```json
+{
+    "dimension_scores": {
+        "diversity": {"score": 4.3, "reason": "Covers a wide range of relevant sources including methodologies, privacy-preserving techniques, ethical considerations, and practical implementations."},
+        "coverage": {"score": 4.7, "reason": "Comprehensive cov
+2026-04-12 19:15:55.212 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=4.30
+2026-04-12 19:15:55.212 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [methodology] 章节 (4738 字符)...
+2026-04-12 19:16:02.049 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1545 chars): ```json
+{
+    "dimension_scores": {
+        "coherence": {"score": 4.8, "reason": "The methodology is well-structured and logically flows from data collection to evaluation. Each step is clearly explained and connected to the next."},
+        "completeness": {"score": 4.7, "reason": "All necessary c
+2026-04-12 19:16:02.049 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [methodology] 评估完成 | 总分=4.70
+2026-04-12 19:16:02.049 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [result] 章节 (5072 字符)...
+2026-04-12 19:16:08.979 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1589 chars): ```json
+{
+    "dimension_scores": {
+        "numerical_accuracy": {"score": 4.8, "reason": "The numerical values are accurate and well-presented in tables and figures. However, the explanation for the accuracy difference could be more detailed."},
+        "clarity": {"score": 4.6, "reason": "The res
+2026-04-12 19:16:08.979 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [result] 评估完成 | 总分=4.60
+2026-04-12 19:16:08.979 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (2465 字符)...
+2026-04-12 19:16:15.775 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1674 chars): ```json
+{
+    "dimension_scores": {
+        "comprehensiveness": {"score": 4.8, "reason": "The conclusion comprehensively summarizes the key findings about the benefits and potential of federated learning in medical AI, including privacy, security, and utility."},
+        "summary_quality": {"score"
+2026-04-12 19:16:15.775 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=4.65
+2026-04-12 19:16:15.775 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [topic] 章节 (3355 字符)...
+2026-04-12 19:16:22.072 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1492 chars): ```json
+{
+    "dimension_scores": {
+        "completeness": {"score": 4.8, "reason": "The introduction covers the core research problem comprehensively, including motivations, challenges, and opportunities. It provides a solid foundation for the subsequent sections."},
+        "content_quality": {"s
+2026-04-12 19:16:22.072 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [topic] 评估完成 | 总分=4.68
+2026-04-12 19:16:22.072 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (6036 字符)...
+2026-04-12 19:16:28.471 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1474 chars): ```json
+{
+    "dimension_scores": {
+        "diversity": {"score": 4.3, "reason": "Covers a wide range of methodologies including rule-based systems, deep learning, recurrent neural networks, and transformers."},
+        "coverage": {"score": 4.6, "reason": "Comprehensive coverage of existing litera
+2026-04-12 19:16:28.471 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=4.30
+2026-04-12 19:16:28.471 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [methodology] 章节 (4170 字符)...
+2026-04-12 19:16:36.140 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1842 chars): ```json
+{
+    "dimension_scores": {
+        "coherence": {"score": 4.8, "reason": "The methodology is well-organized and logically flows from data acquisition to model training and validation. However, there could be more explicit connections between some sections."},
+        "completeness": {"score
+2026-04-12 19:16:36.140 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [methodology] 评估完成 | 总分=4.75
+2026-04-12 19:16:36.140 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [result] 章节 (3653 字符)...
+2026-04-12 19:16:44.463 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1951 chars): ```json
+{
+    "dimension_scores": {
+        "numerical_accuracy": {"score": 4.8, "reason": "The numerical values provided are precise and well-supported by tables and figures. However, there is a minor typographical error in the precision value for X-ray (should be 93.2% instead of 93.2%)."},
+      
+2026-04-12 19:16:44.463 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [result] 评估完成 | 总分=4.50
+2026-04-12 19:16:44.464 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (1966 字符)...
+2026-04-12 19:16:50.587 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1468 chars): ```json
+{
+    "dimension_scores": {
+        "comprehensiveness": {"score": 4.3, "reason": "The conclusion effectively summarizes key findings but could include more details on other aspects like cost-effectiveness or broader applicability."},
+        "summary_quality": {"score": 4.2, "reason": "The 
+2026-04-12 19:16:50.587 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=4.40
+2026-04-12 19:16:50.587 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [topic] 章节 (2486 字符)...
+2026-04-12 19:16:56.167 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1285 chars): ```json
+{
+    "dimension_scores": {
+        "completeness": {"score": 4.8, "reason": "The introduction covers the core research problem comprehensively, discussing the context, motivation, and specific objectives of the study."},
+        "content_quality": {"score": 4.6, "reason": "The content is we
+2026-04-12 19:16:56.168 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [topic] 评估完成 | 总分=4.70
+2026-04-12 19:16:56.168 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [background] 章节 (6880 字符)...
+2026-04-12 19:17:03.688 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1742 chars): ```json
+{
+    "dimension_scores": {
+        "completeness": {"score": 4.8, "reason": "The section covers a wide range of topics related to GNNs and their applications in molecular property prediction, providing sufficient context and background information."},
+        "content_depth": {"score": 4.6,
+2026-04-12 19:17:03.688 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [background] 评估完成 | 总分=4.70
+2026-04-12 19:17:03.688 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [related_work] 章节 (4223 字符)...
+2026-04-12 19:17:10.218 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1560 chars): ```json
+{
+    "dimension_scores": {
+        "diversity": {"score": 4.3, "reason": "The section covers a wide range of relevant sources including early works, recent advancements, hybrid models, and reinforcement learning approaches."},
+        "coverage": {"score": 4.7, "reason": "The coverage is co
+2026-04-12 19:17:10.218 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [related_work] 评估完成 | 总分=4.40
+2026-04-12 19:17:10.218 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] 评估 [conclusion] 章节 (2532 字符)...
+2026-04-12 19:17:16.437 | DEBUG    | src.utils.llm_client:chat_json:170 - chat_json raw response (1496 chars): ```json
+{
+    "dimension_scores": {
+        "comprehensiveness": {"score": 4.8, "reason": "The conclusion effectively summarizes the key findings, including the role of astrocyte regional specificity and the impact on molecular property predictions."},
+        "summary_quality": {"score": 4.6, "reas
+2026-04-12 19:17:16.437 | INFO     | src.agents.base_agent:log_info:44 - [Evaluator] ✓ [conclusion] 评估完成 | 总分=4.65
+2026-04-12 19:17:16.441 | INFO     | __main__:format_and_save_report:238 - 
+📊 评估报告已保存:
+2026-04-12 19:17:16.441 | INFO     | __main__:format_and_save_report:239 -    文本版: results\evaluation\benchmark_report_20260412_191716.txt
+2026-04-12 19:17:16.441 | INFO     | __main__:format_and_save_report:240 -    数据版: results\evaluation\benchmark_results.json

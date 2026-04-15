@@ -1,0 +1,562 @@
+2026-04-12 18:14:40.501 | INFO     | experiments.run_inference:main:56 - 🚀 FRAME Phase 4: 推理阶段 开始
+2026-04-12 18:14:42.332 | INFO     | src.utils.embedding:__init__:36 - 检测到 GPU: NVIDIA GeForce RTX 3050 Laptop GPU (4.0 GB)
+2026-04-12 18:14:43.357 | INFO     | src.utils.embedding:_init_openai:85 - 使用 API Embedding | 模型=text-embedding-v1 | 维度=1536
+2026-04-12 18:14:43.358 | INFO     | src.inference.retriever:__init__:60 - FAISS 索引初始化 | 类型=IndexFlatIP | 维度=1024
+2026-04-12 18:14:43.359 | INFO     | src.inference.retriever:load:218 - 📂 FAISS 索引已加载 | 向量数=120 | 维度=1024
+2026-04-12 18:14:43.368 | INFO     | src.utils.llm_client:__init__:70 - 初始化 LLM 客户端 (requests): vllm/Qwen/Qwen2.5-7B-Instruct
+2026-04-12 18:14:43.371 | INFO     | src.utils.llm_client:__init__:70 - 初始化 LLM 客户端 (requests): vllm/Qwen/Qwen2.5-7B-Instruct
+2026-04-12 18:14:43.376 | INFO     | src.utils.llm_client:__init__:70 - 初始化 LLM 客户端 (requests): vllm/Qwen/Qwen2.5-7B-Instruct
+2026-04-12 18:14:43.376 | INFO     | src.inference.pipeline:__init__:54 - FrameInferencePipeline 初始化完成 | TopK=5 | Filter=✓ | Integrator=✓
+2026-04-12 18:14:43.377 | INFO     | experiments.run_inference:_run_comparison:135 - 🔬 对比实验 | 5 个主题 | 方法: No-RAG vs RAG vs Ours
+2026-04-12 18:14:43.377 | INFO     | src.inference.pipeline:run_comparison_experiment:226 - 
+##################################################
+2026-04-12 18:14:43.377 | INFO     | src.inference.pipeline:run_comparison_experiment:227 - 对比实验进度: 1/5 | Deep Learning Approaches for CT-based Medical Image Analysis...
+2026-04-12 18:14:43.377 | INFO     | src.inference.pipeline:run_comparison_experiment:228 - ##################################################
+2026-04-12 18:14:43.377 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:14:43.377 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: Deep Learning Approaches for CT-based Medical Image Analysis
+2026-04-12 18:14:43.377 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:14:43.377 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [topic] 章节...
+2026-04-12 18:14:53.870 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [topic] 生成完成 (3241 字符)
+2026-04-12 18:14:53.870 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [topic] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=3241
+2026-04-12 18:14:54.871 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:14:54.871 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: Deep Learning Approaches for CT-based Medical Image Analysis
+2026-04-12 18:14:54.871 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:14:54.871 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [background] 章节...
+2026-04-12 18:15:08.231 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [background] 生成完成 (3577 字符)
+2026-04-12 18:15:08.231 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [background] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=3577
+2026-04-12 18:15:09.232 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:15:09.232 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: Deep Learning Approaches for CT-based Medical Image Analysis
+2026-04-12 18:15:09.232 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:15:09.232 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [related_work] 章节...
+2026-04-12 18:15:25.911 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [related_work] 生成完成 (4708 字符)
+2026-04-12 18:15:25.911 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [related_work] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=4708
+2026-04-12 18:15:26.912 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:15:26.912 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: Deep Learning Approaches for CT-based Medical Image Analysis
+2026-04-12 18:15:26.912 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:15:26.912 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [methodology] 章节...
+2026-04-12 18:15:41.570 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [methodology] 生成完成 (3974 字符)
+2026-04-12 18:15:41.570 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [methodology] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=3974
+2026-04-12 18:15:42.571 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:15:42.571 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: Deep Learning Approaches for CT-based Medical Image Analysis
+2026-04-12 18:15:42.571 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:15:42.571 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [result] 章节...
+2026-04-12 18:16:01.088 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [result] 生成完成 (3848 字符)
+2026-04-12 18:16:01.089 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [result] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=3848
+2026-04-12 18:16:02.089 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:16:02.089 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: Deep Learning Approaches for CT-based Medical Image Analysis
+2026-04-12 18:16:02.089 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:16:02.089 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [conclusion] 章节...
+2026-04-12 18:16:09.387 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [conclusion] 生成完成 (2290 字符)
+2026-04-12 18:16:09.387 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [conclusion] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=2290
+2026-04-12 18:16:10.388 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [no_rag] 完成
+2026-04-12 18:16:12.388 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:16:12.388 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: Deep Learning Approaches for CT-based Medical Image Analysis
+2026-04-12 18:16:12.388 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:16:12.956 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [topic] 失败: 
+2026-04-12 18:16:12.956 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:16:12.956 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: Deep Learning Approaches for CT-based Medical Image Analysis
+2026-04-12 18:16:12.956 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:16:13.063 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [background] 失败: 
+2026-04-12 18:16:13.063 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:16:13.063 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: Deep Learning Approaches for CT-based Medical Image Analysis
+2026-04-12 18:16:13.063 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:16:13.172 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [related_work] 失败: 
+2026-04-12 18:16:13.172 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:16:13.172 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: Deep Learning Approaches for CT-based Medical Image Analysis
+2026-04-12 18:16:13.172 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:16:13.274 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [methodology] 失败: 
+2026-04-12 18:16:13.274 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:16:13.274 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: Deep Learning Approaches for CT-based Medical Image Analysis
+2026-04-12 18:16:13.274 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:16:13.379 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [result] 失败: 
+2026-04-12 18:16:13.379 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:16:13.379 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: Deep Learning Approaches for CT-based Medical Image Analysis
+2026-04-12 18:16:13.379 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:16:13.488 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [conclusion] 失败: 
+2026-04-12 18:16:13.488 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [rag] 完成
+2026-04-12 18:16:15.489 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:16:15.489 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: Deep Learning Approaches for CT-based Medical Image Analysis
+2026-04-12 18:16:15.489 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:16:15.596 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [topic] 失败: 
+2026-04-12 18:16:15.597 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:16:15.597 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: Deep Learning Approaches for CT-based Medical Image Analysis
+2026-04-12 18:16:15.597 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:16:15.695 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [background] 失败: 
+2026-04-12 18:16:15.695 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:16:15.695 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: Deep Learning Approaches for CT-based Medical Image Analysis
+2026-04-12 18:16:15.695 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:16:15.808 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [related_work] 失败: 
+2026-04-12 18:16:15.808 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:16:15.808 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: Deep Learning Approaches for CT-based Medical Image Analysis
+2026-04-12 18:16:15.808 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:16:15.919 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [methodology] 失败: 
+2026-04-12 18:16:15.919 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:16:15.919 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: Deep Learning Approaches for CT-based Medical Image Analysis
+2026-04-12 18:16:15.919 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:16:16.048 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [result] 失败: 
+2026-04-12 18:16:16.048 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:16:16.048 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: Deep Learning Approaches for CT-based Medical Image Analysis
+2026-04-12 18:16:16.048 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:16:16.150 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [conclusion] 失败: 
+2026-04-12 18:16:16.150 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [ours] 完成
+2026-04-12 18:16:18.151 | INFO     | src.inference.pipeline:run_comparison_experiment:226 - 
+##################################################
+2026-04-12 18:16:18.151 | INFO     | src.inference.pipeline:run_comparison_experiment:227 - 对比实验进度: 2/5 | NLP Methods for Clinical Note Information Extraction...
+2026-04-12 18:16:18.151 | INFO     | src.inference.pipeline:run_comparison_experiment:228 - ##################################################
+2026-04-12 18:16:18.151 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:16:18.151 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: NLP Methods for Clinical Note Information Extraction
+2026-04-12 18:16:18.151 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:16:18.151 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [topic] 章节...
+2026-04-12 18:16:26.887 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [topic] 生成完成 (2721 字符)
+2026-04-12 18:16:26.887 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [topic] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=2721
+2026-04-12 18:16:27.888 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:16:27.888 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: NLP Methods for Clinical Note Information Extraction
+2026-04-12 18:16:27.888 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:16:27.888 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [background] 章节...
+2026-04-12 18:16:45.392 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [background] 生成完成 (5348 字符)
+2026-04-12 18:16:45.392 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [background] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=5348
+2026-04-12 18:16:46.393 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:16:46.393 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: NLP Methods for Clinical Note Information Extraction
+2026-04-12 18:16:46.393 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:16:46.393 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [related_work] 章节...
+2026-04-12 18:17:03.339 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [related_work] 生成完成 (4708 字符)
+2026-04-12 18:17:03.339 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [related_work] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=4708
+2026-04-12 18:17:04.340 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:17:04.340 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: NLP Methods for Clinical Note Information Extraction
+2026-04-12 18:17:04.340 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:17:04.340 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [methodology] 章节...
+2026-04-12 18:17:20.165 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [methodology] 生成完成 (4322 字符)
+2026-04-12 18:17:20.165 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [methodology] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=4322
+2026-04-12 18:17:21.165 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:17:21.165 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: NLP Methods for Clinical Note Information Extraction
+2026-04-12 18:17:21.165 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:17:21.165 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [result] 章节...
+2026-04-12 18:17:37.175 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [result] 生成完成 (3408 字符)
+2026-04-12 18:17:37.176 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [result] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=3408
+2026-04-12 18:17:38.176 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:17:38.176 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: NLP Methods for Clinical Note Information Extraction
+2026-04-12 18:17:38.176 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:17:38.176 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [conclusion] 章节...
+2026-04-12 18:17:44.913 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [conclusion] 生成完成 (2164 字符)
+2026-04-12 18:17:44.913 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [conclusion] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=2164
+2026-04-12 18:17:45.913 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [no_rag] 完成
+2026-04-12 18:17:47.914 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:17:47.914 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: NLP Methods for Clinical Note Information Extraction
+2026-04-12 18:17:47.914 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:17:48.109 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [topic] 失败: 
+2026-04-12 18:17:48.109 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:17:48.109 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: NLP Methods for Clinical Note Information Extraction
+2026-04-12 18:17:48.110 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:17:48.224 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [background] 失败: 
+2026-04-12 18:17:48.224 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:17:48.224 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: NLP Methods for Clinical Note Information Extraction
+2026-04-12 18:17:48.224 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:17:48.324 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [related_work] 失败: 
+2026-04-12 18:17:48.324 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:17:48.324 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: NLP Methods for Clinical Note Information Extraction
+2026-04-12 18:17:48.324 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:17:48.443 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [methodology] 失败: 
+2026-04-12 18:17:48.443 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:17:48.443 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: NLP Methods for Clinical Note Information Extraction
+2026-04-12 18:17:48.444 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:17:48.558 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [result] 失败: 
+2026-04-12 18:17:48.558 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:17:48.558 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: NLP Methods for Clinical Note Information Extraction
+2026-04-12 18:17:48.558 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:17:48.672 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [conclusion] 失败: 
+2026-04-12 18:17:48.672 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [rag] 完成
+2026-04-12 18:17:50.673 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:17:50.673 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: NLP Methods for Clinical Note Information Extraction
+2026-04-12 18:17:50.673 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:17:50.786 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [topic] 失败: 
+2026-04-12 18:17:50.786 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:17:50.786 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: NLP Methods for Clinical Note Information Extraction
+2026-04-12 18:17:50.786 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:17:50.901 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [background] 失败: 
+2026-04-12 18:17:50.901 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:17:50.901 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: NLP Methods for Clinical Note Information Extraction
+2026-04-12 18:17:50.901 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:17:51.023 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [related_work] 失败: 
+2026-04-12 18:17:51.024 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:17:51.024 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: NLP Methods for Clinical Note Information Extraction
+2026-04-12 18:17:51.024 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:17:51.139 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [methodology] 失败: 
+2026-04-12 18:17:51.139 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:17:51.139 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: NLP Methods for Clinical Note Information Extraction
+2026-04-12 18:17:51.139 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:17:51.257 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [result] 失败: 
+2026-04-12 18:17:51.257 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:17:51.257 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: NLP Methods for Clinical Note Information Extraction
+2026-04-12 18:17:51.257 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:17:51.364 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [conclusion] 失败: 
+2026-04-12 18:17:51.364 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [ours] 完成
+2026-04-12 18:17:53.365 | INFO     | src.inference.pipeline:run_comparison_experiment:226 - 
+##################################################
+2026-04-12 18:17:53.365 | INFO     | src.inference.pipeline:run_comparison_experiment:227 - 对比实验进度: 3/5 | Federated Learning for Privacy-Preserving Medical AI...
+2026-04-12 18:17:53.365 | INFO     | src.inference.pipeline:run_comparison_experiment:228 - ##################################################
+2026-04-12 18:17:53.365 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:17:53.366 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: Federated Learning for Privacy-Preserving Medical AI
+2026-04-12 18:17:53.366 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:17:53.366 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [topic] 章节...
+2026-04-12 18:18:03.086 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [topic] 生成完成 (3030 字符)
+2026-04-12 18:18:03.086 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [topic] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=3030
+2026-04-12 18:18:04.087 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:18:04.087 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: Federated Learning for Privacy-Preserving Medical AI
+2026-04-12 18:18:04.087 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:18:04.087 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [background] 章节...
+2026-04-12 18:18:15.124 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [background] 生成完成 (3398 字符)
+2026-04-12 18:18:15.124 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [background] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=3398
+2026-04-12 18:18:16.126 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:18:16.126 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: Federated Learning for Privacy-Preserving Medical AI
+2026-04-12 18:18:16.126 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:18:16.126 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [related_work] 章节...
+2026-04-12 18:18:32.348 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [related_work] 生成完成 (4503 字符)
+2026-04-12 18:18:32.348 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [related_work] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=4503
+2026-04-12 18:18:33.348 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:18:33.348 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: Federated Learning for Privacy-Preserving Medical AI
+2026-04-12 18:18:33.348 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:18:33.348 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [methodology] 章节...
+2026-04-12 18:18:49.437 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [methodology] 生成完成 (4625 字符)
+2026-04-12 18:18:49.437 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [methodology] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=4625
+2026-04-12 18:18:50.438 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:18:50.438 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: Federated Learning for Privacy-Preserving Medical AI
+2026-04-12 18:18:50.438 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:18:50.438 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [result] 章节...
+2026-04-12 18:19:04.715 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [result] 生成完成 (3688 字符)
+2026-04-12 18:19:04.715 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [result] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=3688
+2026-04-12 18:19:05.717 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:19:05.717 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: Federated Learning for Privacy-Preserving Medical AI
+2026-04-12 18:19:05.717 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:19:05.717 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [conclusion] 章节...
+2026-04-12 18:19:13.725 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [conclusion] 生成完成 (2581 字符)
+2026-04-12 18:19:13.725 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [conclusion] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=2581
+2026-04-12 18:19:14.726 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [no_rag] 完成
+2026-04-12 18:19:16.727 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:19:16.727 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: Federated Learning for Privacy-Preserving Medical AI
+2026-04-12 18:19:16.727 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:19:16.907 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [topic] 失败: 
+2026-04-12 18:19:16.907 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:19:16.907 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: Federated Learning for Privacy-Preserving Medical AI
+2026-04-12 18:19:16.908 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:19:17.012 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [background] 失败: 
+2026-04-12 18:19:17.012 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:19:17.012 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: Federated Learning for Privacy-Preserving Medical AI
+2026-04-12 18:19:17.012 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:19:17.121 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [related_work] 失败: 
+2026-04-12 18:19:17.121 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:19:17.121 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: Federated Learning for Privacy-Preserving Medical AI
+2026-04-12 18:19:17.121 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:19:17.255 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [methodology] 失败: 
+2026-04-12 18:19:17.255 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:19:17.255 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: Federated Learning for Privacy-Preserving Medical AI
+2026-04-12 18:19:17.256 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:19:17.385 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [result] 失败: 
+2026-04-12 18:19:17.385 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:19:17.385 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: Federated Learning for Privacy-Preserving Medical AI
+2026-04-12 18:19:17.385 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:19:17.515 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [conclusion] 失败: 
+2026-04-12 18:19:17.516 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [rag] 完成
+2026-04-12 18:19:19.517 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:19:19.517 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: Federated Learning for Privacy-Preserving Medical AI
+2026-04-12 18:19:19.517 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:19:19.621 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [topic] 失败: 
+2026-04-12 18:19:19.622 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:19:19.622 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: Federated Learning for Privacy-Preserving Medical AI
+2026-04-12 18:19:19.622 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:19:19.714 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [background] 失败: 
+2026-04-12 18:19:19.714 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:19:19.714 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: Federated Learning for Privacy-Preserving Medical AI
+2026-04-12 18:19:19.715 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:19:19.817 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [related_work] 失败: 
+2026-04-12 18:19:19.817 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:19:19.817 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: Federated Learning for Privacy-Preserving Medical AI
+2026-04-12 18:19:19.817 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:19:19.946 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [methodology] 失败: 
+2026-04-12 18:19:19.946 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:19:19.946 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: Federated Learning for Privacy-Preserving Medical AI
+2026-04-12 18:19:19.946 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:19:20.054 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [result] 失败: 
+2026-04-12 18:19:20.054 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:19:20.054 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: Federated Learning for Privacy-Preserving Medical AI
+2026-04-12 18:19:20.054 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:19:20.171 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [conclusion] 失败: 
+2026-04-12 18:19:20.171 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [ours] 完成
+2026-04-12 18:19:22.172 | INFO     | src.inference.pipeline:run_comparison_experiment:226 - 
+##################################################
+2026-04-12 18:19:22.172 | INFO     | src.inference.pipeline:run_comparison_experiment:227 - 对比实验进度: 4/5 | Automated Radiology Report Generation from Medical Images...
+2026-04-12 18:19:22.172 | INFO     | src.inference.pipeline:run_comparison_experiment:228 - ##################################################
+2026-04-12 18:19:22.172 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:19:22.172 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: Automated Radiology Report Generation from Medical Images
+2026-04-12 18:19:22.172 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:19:22.172 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [topic] 章节...
+2026-04-12 18:19:31.237 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [topic] 生成完成 (2794 字符)
+2026-04-12 18:19:31.237 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [topic] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=2794
+2026-04-12 18:19:32.237 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:19:32.237 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: Automated Radiology Report Generation from Medical Images
+2026-04-12 18:19:32.237 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:19:32.237 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [background] 章节...
+2026-04-12 18:19:45.088 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [background] 生成完成 (4004 字符)
+2026-04-12 18:19:45.088 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [background] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=4004
+2026-04-12 18:19:46.088 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:19:46.088 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: Automated Radiology Report Generation from Medical Images
+2026-04-12 18:19:46.088 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:19:46.088 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [related_work] 章节...
+2026-04-12 18:20:03.744 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [related_work] 生成完成 (5068 字符)
+2026-04-12 18:20:03.744 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [related_work] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=5068
+2026-04-12 18:20:04.745 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:20:04.745 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: Automated Radiology Report Generation from Medical Images
+2026-04-12 18:20:04.745 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:20:04.745 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [methodology] 章节...
+2026-04-12 18:20:17.275 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [methodology] 生成完成 (3486 字符)
+2026-04-12 18:20:17.276 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [methodology] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=3486
+2026-04-12 18:20:18.276 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:20:18.276 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: Automated Radiology Report Generation from Medical Images
+2026-04-12 18:20:18.276 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:20:18.276 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [result] 章节...
+2026-04-12 18:20:33.050 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [result] 生成完成 (3798 字符)
+2026-04-12 18:20:33.050 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [result] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=3798
+2026-04-12 18:20:34.050 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:20:34.050 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: Automated Radiology Report Generation from Medical Images
+2026-04-12 18:20:34.050 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:20:34.050 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [conclusion] 章节...
+2026-04-12 18:20:42.217 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [conclusion] 生成完成 (2627 字符)
+2026-04-12 18:20:42.217 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [conclusion] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=2627
+2026-04-12 18:20:43.218 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [no_rag] 完成
+2026-04-12 18:20:45.219 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:20:45.219 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: Automated Radiology Report Generation from Medical Images
+2026-04-12 18:20:45.219 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:20:45.427 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [topic] 失败: 
+2026-04-12 18:20:45.427 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:20:45.427 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: Automated Radiology Report Generation from Medical Images
+2026-04-12 18:20:45.427 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:20:45.543 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [background] 失败: 
+2026-04-12 18:20:45.543 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:20:45.543 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: Automated Radiology Report Generation from Medical Images
+2026-04-12 18:20:45.544 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:20:45.658 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [related_work] 失败: 
+2026-04-12 18:20:45.658 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:20:45.659 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: Automated Radiology Report Generation from Medical Images
+2026-04-12 18:20:45.659 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:20:45.761 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [methodology] 失败: 
+2026-04-12 18:20:45.761 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:20:45.761 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: Automated Radiology Report Generation from Medical Images
+2026-04-12 18:20:45.761 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:20:45.879 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [result] 失败: 
+2026-04-12 18:20:45.879 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:20:45.879 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: Automated Radiology Report Generation from Medical Images
+2026-04-12 18:20:45.879 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:20:45.997 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [conclusion] 失败: 
+2026-04-12 18:20:45.997 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [rag] 完成
+2026-04-12 18:20:47.998 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:20:47.998 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: Automated Radiology Report Generation from Medical Images
+2026-04-12 18:20:47.998 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:20:48.105 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [topic] 失败: 
+2026-04-12 18:20:48.105 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:20:48.105 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: Automated Radiology Report Generation from Medical Images
+2026-04-12 18:20:48.105 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:20:48.233 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [background] 失败: 
+2026-04-12 18:20:48.233 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:20:48.233 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: Automated Radiology Report Generation from Medical Images
+2026-04-12 18:20:48.233 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:20:48.354 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [related_work] 失败: 
+2026-04-12 18:20:48.354 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:20:48.354 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: Automated Radiology Report Generation from Medical Images
+2026-04-12 18:20:48.354 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:20:48.470 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [methodology] 失败: 
+2026-04-12 18:20:48.470 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:20:48.470 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: Automated Radiology Report Generation from Medical Images
+2026-04-12 18:20:48.470 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:20:48.586 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [result] 失败: 
+2026-04-12 18:20:48.586 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:20:48.586 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: Automated Radiology Report Generation from Medical Images
+2026-04-12 18:20:48.586 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:20:48.694 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [conclusion] 失败: 
+2026-04-12 18:20:48.694 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [ours] 完成
+2026-04-12 18:20:50.695 | INFO     | src.inference.pipeline:run_comparison_experiment:226 - 
+##################################################
+2026-04-12 18:20:50.695 | INFO     | src.inference.pipeline:run_comparison_experiment:227 - 对比实验进度: 5/5 | Graph Neural Networks for Molecular Property Prediction...
+2026-04-12 18:20:50.695 | INFO     | src.inference.pipeline:run_comparison_experiment:228 - ##################################################
+2026-04-12 18:20:50.695 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:20:50.695 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: Graph Neural Networks for Molecular Property Prediction
+2026-04-12 18:20:50.695 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:20:50.695 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [topic] 章节...
+2026-04-12 18:20:57.904 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [topic] 生成完成 (2312 字符)
+2026-04-12 18:20:57.906 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [topic] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=2312
+2026-04-12 18:20:58.906 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:20:58.906 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: Graph Neural Networks for Molecular Property Prediction
+2026-04-12 18:20:58.906 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:20:58.906 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [background] 章节...
+2026-04-12 18:21:12.927 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [background] 生成完成 (4218 字符)
+2026-04-12 18:21:12.927 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [background] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=4218
+2026-04-12 18:21:13.928 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:21:13.928 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: Graph Neural Networks for Molecular Property Prediction
+2026-04-12 18:21:13.928 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:21:13.928 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [related_work] 章节...
+2026-04-12 18:21:29.772 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [related_work] 生成完成 (4393 字符)
+2026-04-12 18:21:29.774 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [related_work] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=4393
+2026-04-12 18:21:30.774 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:21:30.774 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: Graph Neural Networks for Molecular Property Prediction
+2026-04-12 18:21:30.774 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:21:30.774 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [methodology] 章节...
+2026-04-12 18:21:44.611 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [methodology] 生成完成 (3719 字符)
+2026-04-12 18:21:44.611 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [methodology] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=3719
+2026-04-12 18:21:45.613 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:21:45.613 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: Graph Neural Networks for Molecular Property Prediction
+2026-04-12 18:21:45.613 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:21:45.613 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [result] 章节...
+2026-04-12 18:22:06.949 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [result] 生成完成 (3876 字符)
+2026-04-12 18:22:06.949 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [result] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=3876
+2026-04-12 18:22:07.950 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:22:07.950 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: Graph Neural Networks for Molecular Property Prediction
+2026-04-12 18:22:07.950 | INFO     | src.inference.pipeline:generate_section:97 -    方法=no_rag | Filter=✗ | Integrate=✗
+2026-04-12 18:22:07.950 | INFO     | src.agents.base_agent:log_info:44 - [Generator] 生成 [conclusion] 章节...
+2026-04-12 18:22:16.762 | INFO     | src.agents.base_agent:log_info:44 - [Generator] ✓ [conclusion] 生成完成 (2752 字符)
+2026-04-12 18:22:16.762 | INFO     | src.inference.pipeline:generate_section:156 - ✅ [conclusion] 生成完成 | 方法=no_rag | 检索=0 → 过滤=0 | 输出长度=2752
+2026-04-12 18:22:17.764 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [no_rag] 完成
+2026-04-12 18:22:19.764 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:22:19.764 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: Graph Neural Networks for Molecular Property Prediction
+2026-04-12 18:22:19.764 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:22:19.997 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [topic] 失败: 
+2026-04-12 18:22:19.997 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:22:19.997 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: Graph Neural Networks for Molecular Property Prediction
+2026-04-12 18:22:19.997 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:22:20.109 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [background] 失败: 
+2026-04-12 18:22:20.109 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:22:20.109 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: Graph Neural Networks for Molecular Property Prediction
+2026-04-12 18:22:20.109 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:22:20.237 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [related_work] 失败: 
+2026-04-12 18:22:20.237 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:22:20.238 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: Graph Neural Networks for Molecular Property Prediction
+2026-04-12 18:22:20.238 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:22:20.340 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [methodology] 失败: 
+2026-04-12 18:22:20.340 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:22:20.340 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: Graph Neural Networks for Molecular Property Prediction
+2026-04-12 18:22:20.340 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:22:20.467 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [result] 失败: 
+2026-04-12 18:22:20.468 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:22:20.468 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: Graph Neural Networks for Molecular Property Prediction
+2026-04-12 18:22:20.468 | INFO     | src.inference.pipeline:generate_section:97 -    方法=rag | Filter=✗ | Integrate=✓
+2026-04-12 18:22:20.584 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [conclusion] 失败: 
+2026-04-12 18:22:20.584 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [rag] 完成
+2026-04-12 18:22:22.586 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:22:22.586 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [topic] | Topic: Graph Neural Networks for Molecular Property Prediction
+2026-04-12 18:22:22.586 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:22:22.692 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [topic] 失败: 
+2026-04-12 18:22:22.693 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:22:22.693 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [background] | Topic: Graph Neural Networks for Molecular Property Prediction
+2026-04-12 18:22:22.693 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:22:22.808 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [background] 失败: 
+2026-04-12 18:22:22.808 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:22:22.808 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [related_work] | Topic: Graph Neural Networks for Molecular Property Prediction
+2026-04-12 18:22:22.809 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:22:22.901 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [related_work] 失败: 
+2026-04-12 18:22:22.901 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:22:22.902 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [methodology] | Topic: Graph Neural Networks for Molecular Property Prediction
+2026-04-12 18:22:22.902 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:22:23.019 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [methodology] 失败: 
+2026-04-12 18:22:23.019 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:22:23.019 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [result] | Topic: Graph Neural Networks for Molecular Property Prediction
+2026-04-12 18:22:23.019 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:22:23.140 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [result] 失败: 
+2026-04-12 18:22:23.140 | INFO     | src.inference.pipeline:generate_section:95 - 
+==================================================
+2026-04-12 18:22:23.140 | INFO     | src.inference.pipeline:generate_section:96 - 📝 生成 [conclusion] | Topic: Graph Neural Networks for Molecular Property Prediction
+2026-04-12 18:22:23.140 | INFO     | src.inference.pipeline:generate_section:97 -    方法=ours | Filter=✓ | Integrate=✓
+2026-04-12 18:22:23.233 | ERROR    | src.inference.pipeline:generate_full_paper:201 - 生成章节 [conclusion] 失败: 
+2026-04-12 18:22:23.233 | INFO     | src.inference.pipeline:run_comparison_experiment:234 -   ✓ 方法 [ours] 完成
+2026-04-12 18:22:25.234 | INFO     | src.inference.pipeline:run_comparison_experiment:242 - 
+结果统计 [no_rag]: 1/5 成功
+2026-04-12 18:22:25.234 | INFO     | src.inference.pipeline:run_comparison_experiment:242 - 
+结果统计 [rag]: 0/5 成功
+2026-04-12 18:22:25.234 | INFO     | src.inference.pipeline:run_comparison_experiment:242 - 
+结果统计 [ours]: 0/5 成功
+2026-04-12 18:22:25.237 | INFO     | experiments.run_inference:_run_comparison:143 - ✅ 对比实验结果已保存 → results\inference\comparison_results.json

@@ -1,0 +1,30 @@
+# FRAME 依赖包
+# 核心 LLM & API
+openai>=1.12.0
+httpx>=0.27.0
+
+# 向量数据库
+faiss-cpu>=1.7.4
+numpy>=1.26.0
+
+# Embedding
+sentence-transformers>=2.3.0
+torch>=2.1.0
+
+# 数据处理
+pandas>=2.1.0
+pyyaml>=6.0.1
+tqdm>=4.66.0
+
+# PDF 处理 (用于读取原始论文)
+pdfplumber>=0.10.0
+pypdf>=4.0.0
+
+# 科学计算
+scipy>=1.11.0
+
+# 日志
+loguru>=0.7.0
+
+# 环境变量
+python-dotenv>=1.0.0

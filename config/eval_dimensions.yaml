@@ -1,0 +1,181 @@
+# 评估维度定义 - 对应论文 Table 2
+# 这是 FRAME 最核心的配置，直接决定评估和反馈的质量
+
+sections:
+  topic:
+    display_name: "Topic (Introduction)"
+    aliases: ["introduction", "intro"]
+    source_chapter: "Introduction"
+    evaluation_dimensions:
+      - name: "completeness"
+        description: "Does the content cover the core research problem comprehensively?"
+        score_range: [1, 5]
+      - name: "content_quality"
+        description: "Is the content substantive and well-developed?"
+        score_range: [1, 5]
+      - name: "relevance"
+        description: "Is all content directly relevant to the research focus?"
+        score_range: [1, 5]
+      - name: "organization"
+        description: "Is the content logically structured and easy to follow?"
+        score_range: [1, 5]
+      - name: "style"
+        description: "Is the writing style appropriate for academic discourse?"
+        score_range: [1, 5]
+
+  background:
+    display_name: "Background"
+    aliases: ["background", "bkgd"]
+    source_chapter: "Introduction"
+    evaluation_dimensions:
+      - name: "completeness"
+        description: "Does it provide sufficient context and background information?"
+        score_range: [1, 5]
+      - name: "content_depth"
+        description: "Is there adequate depth in covering foundational concepts?"
+        score_range: [1, 5]
+      - name: "relevance_to_topic"
+        description: "Is background tightly connected to the research question?"
+        score_range: [1, 5]
+      - name: "relevance_field"
+        description: "Does it cover relevant prior work in the field?"
+        score_range: [1, 5]
+      - name: "organization_structure"
+        description: "Is the background logically organized from general to specific?"
+        score_range: [1, 5]
+      - name: "style"
+        description: "Is the academic writing style appropriate?"
+        score_range: [1, 5]
+
+  related_work:
+    display_name: "Related Work"
+    aliases: ["related_work", "relw", "literature_review", "previous_work"]
+    source_chapter: "Related Work"
+    evaluation_dimensions:
+      - name: "diversity"
+        description: "Does it cover a diverse range of relevant sources?"
+        score_range: [1, 5]
+      - name: "coverage"
+        description: "Is the coverage of literature comprehensive for the topic?"
+        score_range: [1, 5]
+      - name: "criticality"
+        description: "Does it critically analyze rather than just list references?"
+        score_range: [1, 5]
+      - name: "analysis_depth"
+        description: "Is each work analyzed with sufficient depth?"
+        score_range: [1, 5]
+      - name: "connection"
+        description: "Are connections between different works clearly established?"
+        score_range: [1, 5]
+      - name: "synthesis"
+        description: "Does it synthesize insights across multiple sources effectively?"
+        score_range: [1, 5]
+
+  methodology:
+    display_name: "Methodology"
+    aliases: ["methodology", "methods", "meth"]
+    source_chapter: "Methods / Methodology"
+    evaluation_dimensions:
+      - name: "coherence"
+        description: "Are methodological components logically coherent?"
+        score_range: [1, 5]
+      - name: "completeness"
+        description: "Are all necessary methodological details included?"
+        score_range: [1, 5]
+      - name: "necessity"
+        description: "Is each component justified as necessary?"
+        score_range: [1, 5]
+      - name: "flow"
+        description: "Does the methodology follow a clear logical progression?"
+        score_range: [1, 5]
+      - name: "precision"
+        description: "Are technical descriptions precise and unambiguous?"
+        score_range: [1, 5]
+      - name: "justification"
+        description: "Is each design/choice properly justified with reasoning?"
+        score_range: [1, 5]
+
+  result:
+    display_name: "Result"
+    aliases: ["result", "results", "experiment", "findings", "res"]
+    source_chapter: "Results / Experiment"
+    special_processing: "numeric_extraction"  # 结果章节需要提取数值
+    evaluation_dimensions:
+      - name: "numerical_accuracy"
+        description: "Are experimental results reported accurately with proper numbers?"
+        score_range: [1, 5]
+      - name: "clarity"
+        description: "Are results presented clearly (tables, figures, statistics)?"
+        score_range: [1, 5]
+      - name: "completeness"
+        description: "Do results address all stated research questions?"
+        score_range: [1, 5]
+      - name: "significance"
+        description: "Is statistical significance properly addressed where applicable?"
+        score_range: [1, 5]
+      - name: "reproducibility"
+        description: "Could another researcher reproduce these results?"
+        score_range: [1, 5]
+      - name: "interpretation"
+        description: "Are results interpreted appropriately without overclaiming?"
+        score_range: [1, 5]
+
+  conclusion:
+    display_name: "Conclusion"
+    aliases: ["conclusion", "conclusions", "discussion", "summary", "conc"]
+    source_chapter: "Conclusion / Discussion"
+    evaluation_dimensions:
+      - name: "comprehensiveness"
+        description: "Does it comprehensively summarize key findings?"
+        score_range: [1, 5]
+      - name: "summary_quality"
+        description: "Is the summary concise yet complete?"
+        score_range: [1, 5]
+      - name: "impact"
+        description: "Is the impact of findings clearly articulated?"
+        score_range: [1, 5]
+      - name: "future_directions"
+        description: "Are meaningful future research directions identified?"
+        score_range: [1, 5]
+      - name: "limitations"
+        description: "Are limitations honestly acknowledged?"
+        score_range: [1, 5]
+      - name: "synthesis"
+        description: "Does it synthesize contributions into a coherent take-away?"
+        score_range: [1, 5]
+
+# 章节选择策略
+section_strategy:
+  # 长章节：取最后一轮迭代输出
+  long_sections: ["related_work", "methodology", "result"]
+  strategy_long: "last_iteration"
+
+  # 短章节：质量门控选择（只选超过阈值的最高分迭代）
+  short_sections: ["topic", "background", "conclusion"]
+  strategy_short: "quality_gated"
+  quality_gate_threshold: 6.0  # 满分10分
+
+# 改进建议维度映射 (Reflector 使用)
+recommendation_mapping:
+  background:
+    improve_content_depth: "Add more detailed explanation of foundational concepts"
+    improve_relevance: "Remove content not directly supporting the research question"
+    improve_organization: "Restructure with clearer logical flow"
+    improve_style: "Enhance academic tone and clarity"
+
+  related_work:
+    improve_diversity: "Include more diverse perspectives and source types"
+    improve_coverage: "Address gaps in literature coverage"
+    improve_critical_analysis: "Strengthen critical evaluation of cited works"
+    improve_synthesis: "Better connect and synthesize across sources"
+
+  methodology:
+    improve_coherence: "Clarify relationships between methodological components"
+    improve_completeness: "Add missing methodological details"
+    improve_flow: "Reorganize for better logical flow"
+    improve_precision: "Use more precise technical terminology"
+
+  conclusion:
+    improve_comprehensiveness: "Ensure all key findings are covered"
+    improve_impact: "More clearly articulate practical/theoretical implications"
+    improve_future_directions: "Provide more specific and actionable future directions"

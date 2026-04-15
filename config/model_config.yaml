@@ -1,0 +1,81 @@
+# LLM API 配置 - AutoDL 本地部署 (SSH隧道)
+llm:
+  # 主力模型 - AutoDL vLLM (Qwen2.5-7B, RTX 3090)
+  primary:
+    provider: "vllm"                 # 本地 vLLM (AutoDL GPU)
+    api_key: "dummy"                 # vLLM 不需要真实 key
+    base_url: "http://localhost:10088/v1"   # SSH隧道: 本地10088 → 远程8800
+    model: "Qwen/Qwen2.5-7B-Instruct"   # AutoDL 3090 部署的模型
+    temperature: 0.7
+    max_tokens: 2048
+
+  # 备选模型 (可选, 用于对比实验)
+  secondary:
+    provider: "dashscope"
+    api_key: "${DASHSCOPE_API_KEY}"
+    base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    model: "qwen-plus"
+    temperature: 0.7
+    max_tokens: 4096
+
+  # 评估专用模型 - 同样用本地vLLM (低温度保证稳定性)
+  evaluator:
+    provider: "vllm"
+    api_key: "dummy"
+    base_url: "http://localhost:10088/v1"   # SSH隧道: 本地10088 → 远程8800
+    model: "Qwen/Qwen2.5-7B-Instruct"      # AutoDL 3090 部署
+    temperature: 0.3               # 评估时降低温度以获得稳定输出
+    max_tokens: 1024
+
+# Embedding 配置 - 使用百炼 text-embedding-v3 API
+embedding:
+  provider: "openai"
+  model_name: "text-embedding-v3"
+  dimension: 1024                          # text-embedding-v3 维度
+
+# FAISS 向量数据库配置
+faiss:
+  index_type: "IndexFlatIP"              # 内积索引 (小数据量足够)
+  n_probe: 10                            # IVF 索引探测数
+  retrieval_top_k: 5                     # RAG 检索 Top-K
+
+# 数据集构建配置
+dataset:
+  raw_data_dir: "data/raw/"
+  processed_dir: "data/processed/"
+  faiss_index_dir: "data/faiss_index/"
+
+  # 精简版数据规模 (笔记本友好)
+  total_samples_target: 50              # 3050 笔记本模式: 减少到 50 样本
+  train_ratio: 0.92
+  min_paper_length: 1000                # 降低阈值 (demo数据较短)
+
+  # Extractor-Checker 迭代参数
+  extraction_rounds: 1                  # 笔记本模式: 1轮即可验证流程
+  quality_threshold: 5.0                # 降低门槛 (demo 数据质量不稳定)
+
+# FRAME 训练配置 (笔记本适配)
+training:
+  iteration_rounds: 1                   # G-E-R 循环 1 轮 (原=2, 笔记本省时)
+  batch_size: 1                         # 串行处理 (避免并发API限流+显存)
+  save_every_n_samples: 5               # 更频繁保存
+  checkpoint_dir: "checkpoints/"
+
+# 推理配置
+inference:
+  filter_enabled: True                  # 启用 Filter agent
+  integrator_enabled: True              # 启用 Integrator
+  num_reports_to_integrate: 3           # 合并报告数上限
+
+# 评估配置
+evaluation:
+  llm_eval_rounds: 1                    # 1次评估 (节省成本)
+  baseline_methods: ["no_rag", "rag", "ours"]
+  output_dir: "results/"
+
+# 日志配置
+logging:
+  level: "INFO"
+  log_file: "logs/frame.log"
+  rotation: "50 MB"
+  retention: "7 days"

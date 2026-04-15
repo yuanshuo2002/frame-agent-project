@@ -1,0 +1,69 @@
+﻿============================================================
+  FRAME Phase 4: Inference v6 (Final)
+============================================================
+
+[1] Checking vLLM...
+  [OK] Qwen/Qwen2.5-7B-Instruct
+
+[2] Embedding client (text-embedding-v3, dim=1024)...
+  [OK] dim=1024
+
+[3] Building FAISS index from training results...
+  Encoding 120 vectors...
+  [OK] FAISS ready | 120 vectors x 1024d
+
+[4] Testing vLLM generation...
+  [OK] vLLM responds: 'Hello, nice to meet you.'
+
+[5] Running FRAME Inference Pipeline...
+
+--- Generating [topic] ---
+  Retrieved 5 candidates
+  [OK] topic (6861 chars)
+
+--- Generating [background] ---
+  Retrieved 5 candidates
+  [OK] background (5006 chars)
+
+--- Generating [related_work] ---
+  Retrieved 5 candidates
+  [OK] related_work (4615 chars)
+
+--- Generating [methodology] ---
+  Retrieved 5 candidates
+  [OK] methodology (4640 chars)
+
+--- Generating [result] ---
+  Retrieved 5 candidates
+  [OK] result (4494 chars)
+
+--- Generating [conclusion] ---
+  Retrieved 5 candidates
+  [OK] conclusion (3572 chars)
+
+============================================================
+  INFERENCE RESULT SUMMARY
+============================================================
+
+  [OK] topic: 6861 chars
+       **Topic: Deep Learning for CT-based Thymus Quantification Using Automated Segmentation**  The thymus, a critical organ involved in the development and...
+
+  [OK] background: 5006 chars
+       **Background**  The thymus plays a crucial role in the development and maintenance of the adaptive immune system by serving as a primary site for T-ce...
+
+  [OK] related_work: 4615 chars
+       **Related Work**  The application of deep learning in medical imaging has garnered significant attention due to its potential to enhance diagnostic ac...
+
+  [OK] methodology: 4640 chars
+       **Methodology**  This study aims to develop a robust automated segmentation system for quantifying the thymus using computed tomography (CT) images th...
+
+  [OK] result: 4494 chars
+       **Result Section**  In this study, we evaluated the performance of a deep learning model for automated thymus quantification using computed tomography...
+
+  [OK] conclusion: 3572 chars
+       **Conclusion**  The integration of deep learning techniques in the field of computed tomography (CT)-based thymus quantification has demonstrated sign...
+
+  Total: 6/6 sections OK | 29188 total chars
+  Saved: C:\Users\11380\WorkBuddy\20260410152734\frame_reproduction\results\inference\demo_results.json
+============================================================
+  Phase 4 Demo Complete!
